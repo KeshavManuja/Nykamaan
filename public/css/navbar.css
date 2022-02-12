@@ -1,0 +1,266 @@
+#header1Data {
+    height: 40px;
+    width: 100%;
+    background-color: black;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  #mainBodyPart{
+    background-color: whitesmoke;
+  }
+  #rightmessageDiv {
+    display: flex;
+    height: 30px;
+    width: 20%;
+    float: right;
+    margin-right: 70px;      
+  /* border: 3px solid white; */
+    margin-top: 5px;
+  }
+  #button1Flex{
+      display: flex;
+      width: 100px;
+      height: 30px;
+      cursor: pointer;
+      appearance: button;
+      /* border: 2px solid white; */
+      margin-right: 10px;
+  }
+  #button2Flex{
+      display: flex;
+      height: 30px;
+      width: 125px;
+      /* border: 2px solid white; */
+  }
+  .fa-gift{
+      color: #0B5A75;
+  }
+  #finalHeader{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+  }
+  #header2Container{
+      width: 100%;
+      height: 75px;
+      border-bottom: 1px solid grey;
+      /* border: 2px solid black; */
+  }
+  #setHeader2{
+      display: flex;
+      /* border: 2px solid red; */
+      width: 85%;
+      height: 80px;
+      margin: auto;
+  }
+  #imgSetter img{
+      width: 120px;
+      height: 70px;
+      object-fit: cover;
+  }
+  #imgSetter{
+     /* border: 2px solid darkblue; */
+     width: 125px;
+     height: 75px;
+  }
+  #titleSetup{
+     padding-top: 25px;
+     padding-left: 2px;
+     /* border: 2px solid red; */
+  }
+  #titleSetup span{
+    color: #16152B;
+    padding-left: 5px;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: 'SourceSansPro-Semibold', sans-serif
+  }
+  #titleSetup span:hover{
+     color: teal;
+  }
+  #inputSetup{
+     /* border: 2px solid red; */
+     margin-left: 200px;
+     width: 300px;
+     height: 40px;
+     border: 1px solid gray;
+     margin-top: 20px;
+    background-color: whitesmoke;
+  }
+  /* input{
+     width: 93%;
+     height: 100%;
+     border-radius: 5px;
+     background-color: whitesmoke;
+     border-width: 0 0 0px;
+  } */
+  #accountSetup{
+     height: 40px;
+     width: 200px;
+     /* border: 2px solid red; */
+     margin-top: 10px;
+     display: flex;
+     padding-top: 10px;
+     margin-left: 50px;
+     /* cursor: pointer; */
+     /* position: relative; */
+  }
+  #accountSetup>span{
+     padding-left: 5px;
+     padding-right: 30px;
+  }
+  #openCart,#GoToLogin,#GoTOLogin1{
+     cursor: pointer;
+  }
+  .imgIcon{
+    height: 25px;
+  }
+  #button2Flex>i,#button1Flex>i{
+    color: #0B5874;
+    padding-top: 5px;
+  }
+  .search .fa-search {
+  /* position: absolute; */
+  top: 28px;
+  left: 75%;
+  font-size: 15px;
+  }
+  .search{
+  /* border: 2px solid red; */
+  margin-left: 300px;
+  }
+  #inp {
+  width: 220px;
+  padding: 5px;
+  margin: 15px;
+  height: 35px;
+  /* outline:none; */
+  background-color: whitesmoke;
+  margin-left: 0px;
+  border-width: 0 0 0px;
+  border-radius: 5px;
+  /* border: 2px solid darkgoldenrod; */
+  }
+  /* navbar css start */
+  #header3{
+    width: 100%;
+  }
+    .dropBox1{
+        display: flex;
+        position: absolute;
+        background-color: white;
+        /* padding: 15px; */
+        /* border: 2px solid black; */
+        z-index: 99;
+    }
+    #subMenu{
+        display: flex;
+        width: 80%;
+        height: 30px;
+        /* margin-left:50px ; */
+        margin: auto;
+        /* justify-content: space-evenly; */
+        gap: 10px;
+        /* border: 2px solid black; */
+        text-decoration: none;
+        list-style-type: none;
+        /* background-color: whitesmoke; */
+        font-size: 15px;
+        margin-top: 8px;
+    }
+    a{
+      text-decoration: none;
+      color: gray;
+    }
+    .column1,.column2,.column3,.column4,.column5,.column6,.column7{
+        display: flex;
+        flex-direction: column;
+    }
+    .column1 a,
+    .column2 a,
+    .column3 a,
+    .column4 a,
+    .column5 a,
+    .column6 a,
+    .column7 a {
+        /* padding: 12px 5px; */
+         padding-right: 20px;
+        padding-bottom: 15px;
+    }
+    #subMenu li>div{
+        visibility: hidden;
+    }
+    #subMenu li:hover div{
+        visibility: visible;
+        margin-top: 10px;
+    }
+    #subMenu li:hover .slider{
+        position: relative;
+    }
+    #subMenu li>a{
+      color: black;
+    }
+    #subMenu >li {
+      padding-left: 30px;
+    }
+    .dropBox1 >div:nth-child(2){
+      background-color: whitesmoke;
+    }
+    .dropBox1 >div:nth-child(4){
+      background-color: whitesmoke;
+    }
+    .dropBox1 >div:nth-child(6){
+      background-color: whitesmoke;
+    }
+    .dropBox1 div>a:hover{
+      color:  teal;
+    }
+    .dropBox1 div>a:nth-child(1){
+      color: black;
+      font-weight: bold;
+    }
+    #perfume div>a{
+        color: black;
+        font-weight: bold;
+    }
+    #perfume div>a:hover{
+        color: teal;
+    }
+    .dropBox1 div>a:nth-child(1):hover{
+      color: teal;
+    }
+    #health,#lifestyle,#petcare{
+      right: 0;
+    }
+    #beard div{
+        margin-right: 120px;
+        padding-left: 10px;
+    }
+    #hair{
+        left: 20%;
+    }
+    #skincare{
+        left: 25%;
+    }
+    #skincare div{
+        margin-right: 40px;
+        padding-left: 10px;
+    }
+    #personal{
+        left: 20%;
+    }
+    #personal div{
+        padding-left: 10px;
+    }
+    #perfume{
+        left: 40%;
+    }
+    #perfume div{
+        padding-left: 10px;
+    }

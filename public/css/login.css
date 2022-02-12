@@ -1,0 +1,62 @@
+#loginInContainerDk{
+    background-color: #fffefe;
+    height: 630px;
+    width: 23%;
+    border: 1px solid lightgray;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+body{
+    background-color: whitesmoke;
+}
+#crossIconLoginDk{
+    margin-left: 4%;
+    margin-top: 5%;
+    opacity: 0.8;
+    display: inline-block;
+}
+#logInH_Dk{
+    font-size: 17px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+    display: inline-block;
+    margin-left: 20%;
+}
+#inputLoginDk{
+    margin-left: 3%;
+    height: 43px;
+    width: 90%;
+    /* border-radius: 3px; */
+}
+#inputLoginDk::placeholder{
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+}
+#inputLoginContainer{
+    border: 1px solid transparent;
+    width: 90%;
+    height: 55px;
+    margin: auto;
+}
+#btnLoginProceedC{
+    border: 1px solid transparent;
+    width: 86%;
+    height: 60px;
+    margin: auto;
+}
+#btnLoginProceed{
+    background-color: #003243;
+    color: white;
+    width: 100%;
+    height: 99%;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    justify-content: space-between;
+}

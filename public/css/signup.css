@@ -1,0 +1,66 @@
+#signUpContainerDk{
+    background-color: #fffefe;
+    height: 630px;
+    width: 23%;
+    border: 1px solid lightgray;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+body{
+    background-color: whitesmoke;
+}
+#crossIconSignUpDk{
+    margin-left: 4%;
+    margin-top: 5%;
+    opacity: 0.8;
+    display: inline-block;
+}
+#signUpH_Dk{
+    font-size: 17px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+    display: inline-block;
+    margin-left: 25%;
+}
+.inputSignUpDk{
+    margin-left: 7%;
+    height: 43px;
+    width: 80%;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-top: 5%;
+}
+#inputLoginDk::placeholder{
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+}
+#inputSignUpContainer{
+    border: 1px solid transparent;
+    width: 90%;
+    height: 125px;
+    margin: auto;
+    margin-top: 5%;
+}
+#btn_signupC{
+    border: 1px solid transparent;
+    width: 86%;
+    height: 60px;
+    margin: auto;
+}
+#btn_signUpDk{
+    background-color: #003243;
+    color: white;
+    width: 100%;
+    height: 99%;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    border: 0px;
+}

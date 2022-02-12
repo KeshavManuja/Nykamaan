@@ -1,0 +1,91 @@
+#navbar {
+    display: flex;
+    padding-left: 4%;
+    padding-right: 4%;
+    /* position: fixed; */
+   background-color: rgb(255, 255, 255);
+
+    
+  }
+  #options {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+  }
+  a {
+    text-decoration: none;
+  }
+  #main_div {
+    display: grid;
+  
+    grid-template-columns: repeat(4, 25%);
+  
+    grid-gap: 20px;
+  
+    justify-content: center;
+  
+    padding: 5%;
+
+    /* margin-top: 40px; */
+  }
+  
+  .men {
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 0px; */
+    padding-left: 10%;
+    color: rgb(0, 50, 67);
+    font-weight: bold;
+    font-size: 30px;
+  }
+  #nykaa {
+    font-size: 20px;
+    margin-right: 180px;
+  }
+  /* #add {
+    padding-right: 5%; */
+    /* margin-right: 30px; */
+    /* color: rgb(82,83, 94) !important; */
+    /* font-size: small;
+    
+  } */
+
+  a{
+      text-decoration: none;
+  }
+  #pay {
+    padding-right: 80%;
+    
+     
+  }
+  #add{
+      width: 120px;
+  }
+  #pay{
+      width:150px;
+  }
+  /* #add{
+      display: flex;
+  } */
+  #add a{
+    /* display: flex; */
+    width: 100px;
+    color: rgb(82,83, 94);
+  }
+  #pay a{
+    /* display: flex; */
+    width: 80px;
+    color: rgb(82,83, 94);
+  }
+  .vl {
+    border-left: 1px solid rgb(219, 214, 214);
+    padding-right: 10px;
+  }
+  #log a{
+      display: flex;
+      width: 80px;
+      color: rgb(82,83, 94);
+  }
+  #log{
+      margin-right: 6px;
+  }

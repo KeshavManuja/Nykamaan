@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="/logo.png"/>
+    <link rel="stylesheet" href="/css/loginotp.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/336aa36eed.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+  
+</head>
+<body>
+    <div id="loginOtpContainerDk">
+        <i class="fas fa-times fa-2x" id="crossIconLoginOtpDk"></i>
+        <p id="logInHOtp_Dk">LOGIN</p>
+        <hr style="opacity: 0.5; margin-top: 0px; width: 90%;">
+
+        <div id="loginOtpParaDiv">
+            <p id="loginOtpPara">Welcome User,<br>
+                Please enter the OTP sent on your phone<br>
+                (Be sure to check your spam folder)</p>
+        </div>
+
+        <div id="inputLoginOtpContainer">
+            <input id="inputLoginOtpDk" type="number" placeholder="OTP">
+
+        </div>
+
+        <br><br>
+
+        <div id="btnLoginOtpC">
+            <button id="btnLoginOtpVerify">VERIFY</button>
+        </div>
+
+    </div>
+</body>
+</html>
+<script>
+document.getElementById("crossIconLoginOtpDk").addEventListener("click", () => {
+    window.location = "/users/login";
+})
+
+let btn_verify = document.getElementById("btnLoginOtpVerify");
+
+let user = JSON.parse(localStorage.getItem("userData"));
+console.log(user);
+
+btn_verify.addEventListener("click", () =>{
+    let input_otp = document.getElementById("inputLoginOtpDk").value;
+    if(input_otp.length !== 6) {
+    alert("Please enter 6 digit OTP")
+    } else {
+    window.location = "/users/checkuser";
+    }
+    });
+
+
+</script>

@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Page</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/slider.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/Cart.css">
+
+    <script src="https://kit.fontawesome.com/8d9bddce50.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+<div id="primediv">
+    <!-- Navbar div -->
+    <div id="navbar">
+        <div id="finalHeader">
+
+            <div id="header1Data">
+              <div id="messageDiv">
+                <!-- <p id="ptagS">
+                    <marquee  scrollamount ="1" behavior="scroll" direction="up">Nykaa Man Ultimate Christmas Bash Sale:Upto 50% OFF</marquee>
+                </p> -->
+              </div>
+        
+              <div id="rightmessageDiv">
+                
+                <div id="button1Flex">
+                    <i class="fas fa-gift fa-1x"></i>
+                    <p style="color: white;margin-top: 5px;padding-left: 5px;font-size: 15px;">Gift Card</p>
+                </div>
+        
+                <div id="button2Flex">
+                    <i class="fas fa-question-circle"></i>
+                    <p style="color: white;margin-top: 5px;padding-left: 5px;font-size: 15px;">Help</p>
+                </div>
+        
+            </div>
+            </div>
+             <!---second header part-->
+        
+            <div id="header2Container">
+                <div id="setHeader2">
+                    <div id="imgSetter">
+                        <img src="https://www.indiantelevision.com/sites/default/files/images/tv-images/2020/10/05/ny.jpg" alt="">
+                    </div>
+                    <div id="titleSetup">
+                        <span>CATEGORIES</span>
+                        <span>BRANDS</span>
+                        <span>GROOMING ADVICE</span>
+                    </div>
+                    <!-- <div id="inputSetup">
+                        <span><i class="fas fa-search"></i></span>
+                        <input id="inp" type="text"  placeholder="Search on Men">
+                        
+                    </div> -->
+                    <div class="search">
+                        <input id="inp" onclick="clickedInput()" placeholder="&#xf002 Search on Men" >
+                      </div>
+        
+                    <div id="accountSetup">
+                        <img id="GoToLogin" class="imgIcon" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiMwMDAwMDAiPjxwYXRoIGQ9Ik04NiwxNC4zMzMzM2MtMTkuNzI2NTUsMCAtMzUuODMzMzMsMTYuMTA2OCAtMzUuODMzMzMsMzUuODMzMzNjMCwxOS43MjY1MyAxNi4xMDY3OSwzNS44MzMzMyAzNS44MzMzMywzNS44MzMzM2MxOS43MjY1NSwwIDM1LjgzMzMzLC0xNi4xMDY4IDM1LjgzMzMzLC0zNS44MzMzM2MwLC0xOS43MjY1MyAtMTYuMTA2NzksLTM1LjgzMzMzIC0zNS44MzMzMywtMzUuODMzMzN6TTg2LDI1LjA4MzMzYzEzLjkxNjgyLDAgMjUuMDgzMzMsMTEuMTY2NTIgMjUuMDgzMzMsMjUuMDgzMzNjMCwxMy45MTY4MSAtMTEuMTY2NTEsMjUuMDgzMzMgLTI1LjA4MzMzLDI1LjA4MzMzYy0xMy45MTY4MiwwIC0yNS4wODMzMywtMTEuMTY2NTIgLTI1LjA4MzMzLC0yNS4wODMzM2MwLC0xMy45MTY4MSAxMS4xNjY1MSwtMjUuMDgzMzMgMjUuMDgzMzMsLTI1LjA4MzMzek00NC43OTE2NywxMDAuMzMzMzNjLTguODQxODgsMCAtMTYuMTI1LDcuMjgzMTIgLTE2LjEyNSwxNi4xMjV2NC4yOTcyYzAsMTAuNTM4MDkgNi42ODE4OSwxOS45OTA1NCAxNi44NzM4NiwyNi40OTAwN2MxMC4xOTE5Nyw2LjQ5OTUzIDI0LjEzNjgyLDEwLjQyMTA2IDQwLjQ1OTQ3LDEwLjQyMTA2YzE2LjMyMjY1LDAgMzAuMjY3NSwtMy45MjE1MyA0MC40NTk0NywtMTAuNDIxMDZjMTAuMTkxOTcsLTYuNDk5NTMgMTYuODczODYsLTE1Ljk1MTk4IDE2Ljg3Mzg2LC0yNi40OTAwN3YtNC4yOTcyYzAsLTguODQxODggLTcuMjgzMTIsLTE2LjEyNSAtMTYuMTI1LC0xNi4xMjV6TTQ0Ljc5MTY3LDExMS4wODMzM2g4Mi40MTY2N2MzLjAzMzI5LDAgNS4zNzUsMi4zNDE3MSA1LjM3NSw1LjM3NXY0LjI5NzJjMCw1Ljk2Njc0IC0zLjg0MzI2LDEyLjI4NTgzIC0xMS45MDQ3OSwxNy40MjY3NmMtOC4wNjE1Myw1LjE0MDkzIC0yMC4wOTg1Myw4LjczNDM4IC0zNC42Nzg1NSw4LjczNDM4Yy0xNC41ODAwMSwwIC0yNi42MTcwMiwtMy41OTM0NSAtMzQuNjc4NTUsLTguNzM0MzdjLTguMDYxNTMsLTUuMTQwOTMgLTExLjkwNDc5LC0xMS40NjAwMiAtMTEuOTA0NzksLTE3LjQyNjc2di00LjI5NzJjMCwtMy4wMzMyOSAyLjM0MTcxLC01LjM3NSA1LjM3NSwtNS4zNzV6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" alt="">
+                        <span id="GoToLogin1" style="margin-top: 4px;">Account</span>
+                        
+                        <script>
+                        let name = JSON.parse(localStorage.getItem("UserDetails"))
+                        // console.log(name)
+                        document.getElementById("GoToLogin1").innerText = name.displayName
+
+                            </script>
+                          
+
+                        <img id="openCart" class="imgIcon" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiMwMDAwMDAiPjxwYXRoIGQ9Ik04NiwxMC43NWMtMTcuNzIwNywwIC0zMi4yNSwxNC41MjkzIC0zMi4yNSwzMi4yNWgtMjEuNWMtMi44NTU0NywwIC01LjIwNzAzLDIuMjI1NTggLTUuMzc1LDUuMDgxMDVsLTUuMzc1LDk2Ljc1Yy0wLjA4Mzk4LDEuNDY5NzMgMC40NjE5MiwyLjkzOTQ2IDEuNDY5NzMsMy45ODkyNmMxLjAwNzgxLDEuMDkxOCAyLjQzNTU0LDEuNjc5NjkgMy45MDUyNywxLjY3OTY5aDExOC4yNWMxLjQ2OTczLDAgMi44OTc0NiwtMC41ODc4OSAzLjkwNTI3LC0xLjY3OTY5YzEuMDA3ODEsLTEuMDQ5OCAxLjU1MzcyLC0yLjUxOTUzIDEuNDY5NzMsLTMuOTg5MjZsLTUuMzc1LC05Ni43NWMtMC4xNjc5NywtMi44NTU0NyAtMi41MTk1MywtNS4wODEwNSAtNS4zNzUsLTUuMDgxMDVoLTIxLjVjMCwtMTcuNzIwNyAtMTQuNTI5MjksLTMyLjI1IC0zMi4yNSwtMzIuMjV6TTg2LDIxLjVjMTEuODQxOCwwIDIxLjUsOS42NTgyMSAyMS41LDIxLjVoLTQzYzAsLTExLjg0MTc5IDkuNjU4MjEsLTIxLjUgMjEuNSwtMjEuNXpNMzcuMzMxMDUsNTMuNzVoMTYuNDE4OTV2MjEuNWgxMC43NXYtMjEuNWg0M3YyMS41aDEwLjc1di0yMS41aDE2LjQxODk1bDQuNzQ1MTEsODZoLTEwNi44MjgxMnoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==" alt="">
+                    </div>
+                </div>
+            </div>
+        
+           
+        
+            <!--navbar html start-->
+            <div id="header3">
+                <ul id="subMenu">
+                    <li><a href="">Shaving</a>
+        
+                        <div class="dropBox1" id="shaving">
+                            <div class="column1">
+                                <a href="">SHAVING APPLIANCES</a>
+                                <a href="">Shavers</a>
+                                <a href="">Trimmers</a>
+                              </div>
+        
+                              <div class="column2">
+                                <a href="">SHAVING TOOLS & <br>ACCESSORIES</a>
+                                <a href="">Razors & Cartridges</a>
+                                <a href="">Shaving Brushes</a>
+                              </div>
+              
+                              <div class="column3">
+                                <a href="">SHAVING CREAMS & <br>LOTIONS</a>
+                                <a href="">Shaving Creams</a>
+                                <a href="">Saving Foams,Gels,&Soaps</a>
+                                <a href="">Pre Shave & After Shave <br>Lotions</a>
+                              </div>
+        
+        
+                              <div class="column4">
+                                <a href="">SHAVING KITS</a>
+                              </div>
+                        </div>
+        
+                    </li>
+                    <li><a href="">Beard Care</a>
+                        <div class="dropBox1" id="beard">
+                            <div class="column1">
+                                <a href="">BEARD CARE</a>
+                                <a href="">Beard Oil</a>
+                                <a href="">Moustache Oil</a>
+                                <a href="">Beard Softner</a>
+                                <a href="">Beard Colour</a>
+                                <a href="">beard Serum</a>
+                                <a href="">Beard Cream</a>
+                                <a href="">Beard Balm & Butter</a>
+                                <a href="">Beard Wash</a>
+                                
+                              </div>
+        
+                              <div class="column2">
+                                <a href="">BEARD STYLING</a>
+                                <a href="">Beard & Moustache Wax</a>
+                                <a href="">Beard Combo</a>
+                                <a href="Beard Gel"></a>
+                              </div>
+              
+                              <div class="column3">
+                                <a href="">BEARD KITS</a>
+                              </div>
+                        </div>
+                    </li>
+                    <li><a href="">Hair</a>
+                        <div class="dropBox1" id="hair">
+                            <div class="column1">
+                                <a href="">HAIR CARE</a>
+                                <a href="">Shampoo</a>
+                                <a href="">Coditioner</a>
+                                <a href="">Hair Oils</a>
+                              </div>
+        
+                              <div class="column2">
+                                <a href="">HAIR STYLING</a>
+                                <a href="">Hair Gel & Waxes</a>
+                                <a href="">Hair Color</a>
+                              </div>
+              
+                              <div class="column3">
+                                <a href="">HAIR BRUSHES 7 <br>DRYERS</a>
+                                <a href="">Hair brushes & Combs</a>
+                                <a href="">Hair Dryers</a>
+                              </div>
+        
+                              <div class="column4">
+                                <a href="">SHOP BY CONCERN</a>
+                                <a href="">Razors & Cartridges</a>
+                                <a href="">Shaving Brushes</a>
+                              </div>
+              
+                              <div class="column5">
+                                <a href="">PROESSIONAL HAIR <br>CARE PRODUCTS</a>
+                              </div>
+                        </div>
+                    </li>
+                    <li><a href="product_page.html">Skin Care</a>
+                        <div class="dropBox1" id="skincare">
+                            <div class="column1">
+                                <a href="">FACE</a>
+                                <a href="">Face Wash</a>
+                                <a href="">Moisturizers</a>
+                                <a href="">Sunscreens</a>
+                                <a href="">Masks & Peels</a>
+                                <a href="">Scrubs & Exfoliators</a>
+                              </div>
+        
+                              <div class="column2">
+                                <a href="">MAKEUP FOR MEN</a>
+                                <a href="">Primer</a>
+                                <a href="">Concealer</a>
+                                <a href="">Foundation</a>
+                                <a href="">Mattiying Face Powder</a>
+                                <a href="">BB & CC Cream</a>
+                                <a href="">Brows</a>
+                                <a href="">Tools & Brushes</a>
+                              </div>
+              
+                              <div class="column3">
+                                <a href="">SKIN CARE KITS</a>
+                              </div>
+        
+                              <div class="column4">
+                                <a href="">SHOP BY CONCERN</a>
+                                <a href="">Dry Skin</a>
+                                <a href="">Oil Removal</a>
+                                <a href="">Acne</a>
+                                <a href="">Blackheads</a>
+                                <a href="">Tan Removal</a>
+                                <a href="">Dark Spots</a>
+                              </div>
+              
+                        </div>
+                    </li>
+                    <li><a href="">Personal Care</a>
+                        <div class="dropBox1" id="personal">
+                            <div class="column1">
+                                <a href="">BATH & BODY</a>
+                                <a href="">Bath & Body</a>
+                                <a href="">Body Wash / <br>Shower Gels</a>
+                                <a href="">Soaps</a>
+                                <a href="">Talc & Intimate <br>Care</a>
+                                <a href="">Body Lotions</a>
+                              </div>
+        
+                              <div class="column2">
+                                <a href="">HAIR CLIPPERS<br>& BODY<br>GROOMERS</a>
+                              </div>
+        
+                              <div class="column3">
+                                <a href="">DENTAL CARE</a>
+                                <a href="">Toothpaste</a>
+                                <a href="">Toothbrush</a>
+                                <a href="">Floss & Tongue <br>Cleaners</a>
+                                <a href="">Mouthwash</a>
+                                <a href="">Mouth Freshner</a>
+                              </div>
+              
+                              <div class="column4">
+                                <a href="">HAND CARE</a>
+                                <a href="">Handwash</a>
+                                <a href="">Hand Sanitizer</a>
+                                <a href="">Hand Cream</a>
+                              </div>
+        
+                              <div class="column5">
+                                <a href="">FOOT CARE</a>
+                                <a href="">Foot Cream</a>
+                                <a href="">Foot Scrub</a>
+                              </div>
+        
+                              <div class="column6">
+                                <a href=""></a>
+                                <a href="">Safety Essentials</a>
+                                <a href="">Masks & Gloves</a>
+                                <a href="">Air Freshners</a>
+                                <a href="">Household Supplies</a>
+                              </div>
+                        </div>
+                    </li>
+                    <li><a href="">Perfumes & Deos</a>
+                        <div class="dropBox1" id="perfume">
+                            <div class="column1">
+                                <a href="">PERFUMES(EDT/EDP)</a>
+                                <a href="">BODY MIST/SPRAY</a>
+                                <a href="">DEODORANTS/ROLL-ONS</a>
+                                <a href="">COLOGNES & AFTER SHAVES</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="">Health</a>
+                      <div class="dropBox1" id="health">
+                        <div class="column1">
+                          <a href="">HEALTH SUPPLIMENTS</a>
+                          <a href="">Multivitamins</a>
+                          <a href="">Calcium & Vitamin D</a>
+                          <a href="">Magnesium & Zinc</a>
+                          <a href="">Omega 3 & Fish oil</a>
+                          <a href="">Immunity Boosters & Vitamin C</a>
+                          <a href="">Melatonin</a>
+                          <a href="">Biotin</a>
+                          <a href="">Collagen</a>
+                          <a href="">Other Suppliments</a>
+                        </div>
+                        <div class="column2">
+                          <a href="">SPORTS NUTRITION</a>
+                          <a href="">Whey Protein</a>
+                          <a href="">Whey Isolate Protein</a>
+                          <a href="">Plant Protein</a>
+                          <a href="">BCAA & Other Muscle Support</a>
+                          <a href="">Weigth and Mass Gainers</a>
+                        </div>
+                        <div class="column3">
+                          <a href="">WEIGTH MANAGEMENT</a>
+                          <a href="">Apple Cider Vinegar</a>
+                          <a href="">Green Tea</a>
+                          <a href="">Green Coffee</a>
+                          <a href="">Fat Burners</a>
+                          <a href="">Slimming Shakes & Juices</a>
+                          <a href="">Sugar Substitutes</a>
+                        </div>
+                        <div class="column4">
+                          <a href="">HEALTH FOODS</a>
+                          <a href="">Dry Fruits, Nuts & Berries</a>
+                          <a href="">Edible Seeds</a>
+                          <a href="">Black Tea & Coffee</a>
+                          <a href="">Herbal Teas</a>
+                          <a href="">Breakfast Cereals</a>
+                          <a href="">Peanut Butter & Protein Snacks</a>
+                          <a href="">Other Health Foods</a>
+                        </div>
+                        <div class="column5">
+                          <a href="">WELLNESS EQUIPEMENT</a>
+                          <a href="">Weighing Scales </a>
+                          <a href="">Fitness</a>
+                          <a href="">Face Steamers</a>
+                          <a href=""><h6>PAIN RELIEF</h6></a>
+                          <a href="">Muscles & Joints</a>
+                          <a href="">Ortho Oils</a>
+                          <a href="">Cough & Cold</a>
+                        </div>
+                        <div class="column6">
+                          <a href="">AYURVEDA & HERBS</a>
+                          <a href="">Ashwagandha </a>
+                          <a href="">Neem</a>
+                          <a href="">Amla</a>
+                          <a href="">Aloe Vera</a>
+                          <a href="">Milk Thistle</a>
+                          <a href="">Wheatgrass</a>
+                          <a href="">Tulsi</a>
+                          <a href="">Giloy & Guduchi</a>
+                          <a href="">Turmeric</a>
+                          <a href="">Spiriluna & Moringa</a>
+                          <a href="">Chyavanprash</a>
+                          <a href="">Shilajit</a>
+                          <a href="">Other Herbal Suppliments</a>
+                        </div>
+                        <div class="column7">
+                          <a href="">SHOP BY CONCERN</a>
+                          <a href="">Diabetes </a>
+                          <a href="">Digestion</a>
+                          <a href="">Organs-Liver, Heart, Kidney</a>
+                          <a href="">Safety & First Aid</a>
+                          <a href="">Weakness Vitality</a>
+                          <a href="">Mental Wellness</a>
+                          <a href="">Blood Pressure</a>
+                          <a href="">Hair & Skin Concerns</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="">Luxe</a>
+                      <div class="dropBox1" id="luxe">
+                        <div class="column1">
+                          <a href="">BATH & BODY</a>
+                          <a href="">HAIR</a>
+                          <a href="">FRAGRANCE</a>
+                          <a href="">SKIN</a>
+                        </div>
+                    </li>
+                    <li><a href="">Gadgets & Tech</a>
+                      <div class="dropBox1" id="gadget">
+                        <div class="column1">
+                          <a href="">HEADPHONES</a>
+                          <a href="">SPEAKERS</a>
+                          <a href="">SMART WATCHES & ACTIVTY TRACKERS</a>
+                          <a href="">COMPUTER PERIPHERALS</a>
+                          <a href="">POWER BANKS</a>
+                          <a href="">CABLES & CHARGERS</a>
+                          <a href="">SMART HOME DEVICES</a>
+                          <a href="">CASES & COVERS</a>
+                          <a href="">CAMERA ACCESSORIES</a>
+          
+                        </div>
+                    </li>
+                    <li><a href="">Lifestyle</a>
+                      <div class="dropBox1" id="lifestyle">
+                        <div class="column1">
+                          <a href="">FOOT WEARS</a>
+                          <a href="">Sneakers</a>
+                          <a href="">Flip Flops</a>
+                          <a href="">Casual Shoes</a>
+                          <a href="">Formal Shoes</a>
+                          <a href="">Sports Shoes</a>
+                          <a href="">Sandals</a>
+                          <a href="">Boots</a>
+                          <a href="">Sliders</a>
+                          <a href="">Clogs</a>
+                        </div>
+                        <div class="column2">
+                          <a href="">WATCHES</a>
+                          <a href="">Watches</a>
+                          <a href="">Smart Watches</a>
+                          <a href="">DRINKWARE</a>
+                          <a href="">Barware & Bar Essentials</a>
+                          <a href="">Flasks & Bottles</a>
+                        </div>
+                        <div class="column3">
+                          <a href="">ACTIVEWEAR & CLOTHING</a>
+                          <a href="">Lounge Wear</a>
+                          <a href="">Innerwear</a>
+                          <a href="">Briefs & Trunks</a>
+                          <a href="">Boxers</a>
+                          <a href="">Vests</a>
+                          <a href="">Thermals</a>
+                          <a href="">Sports Gears & Accessories</a>
+                          <a href="">Tshirts</a>
+                          <a href="">Jerseys</a>
+                        </div>
+                        <div class="column4">
+                          <a href="">SPORT ACCESSORIES</a>
+                          <a href="">Joggers</a>
+                          <a href="">Tracksuits</a>
+                          <a href="">Sport Shorts</a>
+                          <a href="">Track Pants</a>
+                          <a href="">Hoddies & Sweatshirts</a>
+                          <a href="">Jackets</a>
+                          <a href="">Tank Tops</a>
+                          <a href="">Rain Jackets</a>
+                        </div>
+                        <div class="column5">
+                          <a href="">FASHION ACCESSORIES</a>
+                          <a href="">Fashin Accessories </a>
+                          <a href="">Wallets</a>
+                          <a href="">Belts</a>
+                          <a href="">Ties,Cufflinks & Pocket Square</a>
+                          <a href="">Caps & Hats</a>
+                          <a href="">Socks</a>
+                          <a href="">Stationary</a>
+                        </div>
+                        <div class="column6">
+                          <a href="">BAGS & BAKPACKS</a>
+                          <a href="">Bag Packs </a>
+                          <a href="">Laptop Bags</a>
+                          <a href="">Messenger Bags</a>
+                          <a href="">Hand Bags</a>
+                          <a href="">Duffle Bags</a>
+                          <a href="">Gym Bags</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="">petcare</a>
+                      <div class="dropBox1" id="petcare">
+                      <div class="column1">
+                        <a href="">CLEANING & HYGIENE</a>
+                        <a href="">Shampoos & Conditioners </a>
+                        <a href="">Grooming Wipes</a>
+                        <a href="">Shower & Bath Accessories</a>
+                        <a href="">Dental Care</a>
+                        <a href="">Tick & Flea Control</a>
+                        <a href="">Stain Control & Deodorizers</a>
+                        <a href="">Poopers & Scoopers & Bags</a>
+                      </div>
+                      <div class="column2">
+                        <a href="">PET GROOMINFG</a>
+                        <a href="">Pet Hair Grooming Tools </a>
+                        <a href="">HEALTH & WELLNESS</a>
+                        <a href="">FEEDING & WATER SUPPLIES</a>
+                       
+                      </div>
+                      <div class="column3">
+                        <a href="">FOOD & TREATS</a>
+                        <a href="">Dog Food  </a>
+                        <a href="">Cat Food </a>
+                        <a href="">Fish Food</a>
+                        <a href="">Dog Bones</a>
+                        <a href="">Cookies, Biscuits & Snacks</a>
+                
+                      </div>
+                      <div class="column4">
+                        <a href="">PET ACCESSORIES</a>
+                        <a href="">PET CLOTHING & FASHION</a>
+                        <a href="">PET TOYS</a>
+                      </div>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="productTextSF" class="productTexts"> Skin Care Products  (1123)</h2>
+
+    <div id="slidos">
+        <div class="slider">
+            <div class="slide_viewer">
+              <div class="slide_group">
+                <div class="slide">
+                  <img src="https://images-static.nykaa.com/uploads/26cffe49-2331-4ec6-8996-4a4a5b4f4be0.jpg?tr=w-1200,cm-pad_resize" >
+                </div>
+                <div class="slide">
+                  <img src="https://images-static.nykaa.com/uploads/2c8d7944-a627-46a6-b966-ac9a051e09bc.jpg?tr=w-1200,cm-pad_resize" >
+                </div>
+                <div class="slide">
+                  <img src="https://images-static.nykaa.com/uploads/cac66745-bb74-4be2-9c94-6cfcdfdb9087.jpg?tr=w-1200,cm-pad_resize" />
+                </div>
+              </div>
+            </div>
+          </div><!-- End // .slider -->
+          
+          <div class="slide_buttons">
+          </div>
+          
+          <div class="directional_nav">
+            <div class="previous_btn" title="Previous">
+              <img src="https://images-static.nykaa.com/uploads/3df01759-af0c-4d81-b2f7-f61577ac3807.svg" />
+            </div>
+            <div class="next_btn" title="Next">
+              <img src="https://images-static.nykaa.com/uploads/45d5a7b6-86eb-4850-9568-4d6ed91731fe.svg" />
+            </div>
+          </div><!-- End // .directional_nav -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </div>
+    <h2 class="productTexts"> All Products</h2>
+    <br>
+
+    <div id="topdiv">
+
+   
+
+<div id="filterdiv">
+
+<div id="main">
+    <div id="contain">
+
+        <!-- Sorting div -->
+        <div id="sortby">
+
+            <!-- Sort by text -->
+            
+                <pre><h4 class="productTexts" style="display: inline-block;">Sort By : </h4></pre>
+                <pre><h4 class = "productTexts" id="val" style="display: inline-block;">Popularity     </h4></pre>
+           </div>
+            
+
+           <div class="img">
+
+            <img id="down" src="https://cdn.onlinewebfonts.com/svg/img_69892.png" width="15px" height="10px"/>
+            <img class="up" src="https://image.flaticon.com/icons/png/512/37/37559.png" width="15px" height="10px"/>
+            </div>
+
+            
+        </div>
+
+        
+        <div class="flexx">
+
+            <!-- <br> -->
+        <form class="up">
+        <div class="radio">
+        <label  for="sizecheck1" class="size productTexts">Discount</label>
+        <input  type="radio" id="sizecheck1" name="color" value="Discount"/>
+  
+        </div>
+
+        <div class="radio">
+            <label for="sizecheck2" class="size productTexts">Name</label>
+        <input type="radio" id="sizecheck2" name="color" value="Name"/>
+  
+        </div>
+
+        <div class="radio">
+            <label for="sizecheck3" class="size productTexts">Coustmer Top Rated</label>
+        <input type="radio" id="sizecheck3" name="color" value="Coustmer Top Rated"/>
+       
+        </div>
+
+        <div class="radio">
+            <label for="sizecheck4" class="size productTexts">New Arrivals</label>
+        <input type="radio" id="sizecheck4" name="color" value="New Arrivals">
+  
+        </div>
+
+        <div class="radio">
+            <label for="sizecheck5" class="size productTexts">Price : Low to High</label>
+        <input type="radio" id="sizecheck5" name="color" value="Price : Low to High"/>
+   
+        </div>
+
+        <div class="radio">
+            <label for="sizecheck5" class="size productTexts">Price : High to Low</label>
+        <input type="radio" id="sizecheck5" name="color" value="Price : High to Low"/>
+
+        </div>
+    </form>
+    </div>
+    </div>
+
+    <div id="filters">
+
+        <div id="categ">
+
+            <div id="arrowdiv" onclick="changeit(1)">
+                <pre><h5 class="productTexts">Categories    </h5></pre>
+
+                <div class=img>
+                    <img id="down1" src="https://cdn.onlinewebfonts.com/svg/img_69892.png" width="15px" height="10px"/>
+                    <!-- <img class="up" src="https://image.flaticon.com/icons/png/512/37/37559.png" width="15px" height="10px"/> -->
+                </div>
+            </div>
+
+            <div id="flexx1">
+                <form class="up" id="form1">
+                
+                <div class="check"> 
+                    <label for="scales">Facewash</label>
+                    <input type="checkbox" id="scales" name="scales" value="Facewash"/>
+               
+                
+                
+                
+                </div>
+
+                <div class="check">
+                    <label for="scales">Bodywash</label>
+                <input type="checkbox" id="scales" name="scales" value="Bodywash"/>
+                
+              
+                </div>
+
+                <div class="check">
+                    <label for="scales">Serum</label>  
+                <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                
+              
+                </div>
+                </form> 
+            </div>
+        </div>
+
+        
+        <div id="categ1">
+
+            <div id="arrowdiv" onclick="changeit(2)">
+                <pre><h5 class="productTexts">Brand    </h5></pre>
+
+                <div class=img>
+                    <img id="down1" src="https://cdn.onlinewebfonts.com/svg/img_69892.png" width="15px" height="10px"/>
+                    <!-- <img class="up" src="https://image.flaticon.com/icons/png/512/37/37559.png" width="15px" height="10px"/> -->
+                </div>
+            </div>
+
+            <div id="flexx2">
+                <form class="up" id="form2">
+                
+                <div class="check">
+                    <label for="scales">Nyaka naturals</label>
+                    <input type="checkbox" id="scales" name="scales" value="Nyaka naturals"/>
+                    
+                
+                
+                </div>
+
+                <div class="check">
+                 <label for="scales">Vaadi Herbels</label>
+                <input type="checkbox" id="scales" name="scales" value="Bodywash"/>
+                
+                </div>
+
+                <div class="check">
+                <label for="scales">Vedic Line</label>
+                <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                
+                </div>
+                </form> 
+            </div>
+        </div>
+
+        <div id="categ2">
+
+            <div id="arrowdiv" onclick="changeit(3)">
+                <pre><h5 class="productTexts">Price    </h5></pre>
+
+                <div class=img>
+                    <img id="down1" src="https://cdn.onlinewebfonts.com/svg/img_69892.png" width="15px" height="10px"/>
+                    <!-- <img class="up" src="https://image.flaticon.com/icons/png/512/37/37559.png" width="15px" height="10px"/> -->
+                </div>
+            </div>
+
+            <div id="flexx2">
+                <form class="up" id="form3">
+                
+                <div class="check">
+                    <label for="scales">Rs 0 - Rs. 499</label>
+                <input type="checkbox" id="scales" name="scales" value="Nyaka naturals"/>
+                
+                </div>
+
+                <div class="check">
+                <label for="scales">Rs 500 - Rs. 999</label>
+                <input type="checkbox" id="scales" name="scales" value="Bodywash"/>
+                
+                </div>
+
+                <div class="check">
+                <label for="scales">Rs 1000 - Rs. 1999</label>
+                <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                
+                </div>
+
+                <div class="check">
+                    <label for="scales">Rs 2000 - Rs. 3999</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                <div class="check">
+                    <label for="scales">Rs 4000 & Above</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                    </div>
+
+                
+                </form> 
+            </div>
+        </div>
+
+
+        <div id="categ3">
+
+            <div id="arrowdiv" onclick="changeit(4)">
+                <pre><h5 class="productTexts">Discount    </h5></pre>
+
+                <div class=img>
+                    <img id="down1" src="https://cdn.onlinewebfonts.com/svg/img_69892.png" width="15px" height="10px"/>
+                    <!-- <img class="up" src="https://image.flaticon.com/icons/png/512/37/37559.png" width="15px" height="10px"/> -->
+                </div>
+            </div>
+
+            <div id="flexx2">
+                <form class="up" id="form4">
+                
+                <div class="check">
+                <label for="scales">70% And Above </label>
+                <input type="checkbox" id="scales" name="scales" value="Nyaka naturals"/>
+                
+                </div>
+
+                <div class="check">
+                <label for="scales">60% And Above </label>
+                <input type="checkbox" id="scales" name="scales" value="Bodywash"/>
+                
+                </div>
+
+                <div class="check">
+                <label for="scales">50% And Above </label>
+                <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                
+                </div>
+
+                <div class="check">
+                    <label for="scales">40% And Above </label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                <div class="check">
+                    <label for="scales">30% And Above </label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                    </div>
+
+                    <div class="check">
+                        <label for="scales">20% And Above </label>
+                        <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                        
+                    </div>
+
+                    <div class="check"> 
+                        <label for="scales">10% And Above </label>
+                        <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                        
+                    </div>
+
+                    <div class="check">
+                        <label for="scales">All Discounted Products</label>
+                        <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                        
+                    </div>
+
+                
+                </form> 
+            </div>
+        </div>
+
+
+
+        <div id="categ4">
+
+            <div id="arrowdiv" onclick="changeit(5)">
+                <pre><h5 class="productTexts">Avg Coustmer Rating   </h5></pre>
+
+                <div class=img>
+                    <img id="down1" src="https://cdn.onlinewebfonts.com/svg/img_69892.png" width="15px" height="10px"/>
+                    <!-- <img class="up" src="https://image.flaticon.com/icons/png/512/37/37559.png" width="15px" height="10px"/> -->
+                </div>
+            </div>
+
+            <div id="flexx3">
+                <form class="up" id="form5">
+                
+                <div class="check">
+                <label for="scales">4 Stars and Above</label>
+                <input type="checkbox" id="scales" name="scales" value="Nyaka naturals"/>
+                
+                </div>
+
+                <div class="check">
+                <label for="scales">3 Stars and Above</label>
+                <input type="checkbox" id="scales" name="scales" value="Bodywash"/>
+                
+                </div>
+
+                <div class="check">
+                <label for="scales">2 Stars and Above</label>
+                <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                
+                </div>
+
+                <div class="check">
+                    <label for="scales">1 Stars and Above</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                </form> 
+            </div>
+        </div>
+
+        <div id="categ6">
+
+            <div id="arrowdiv" onclick="changeit(6)">
+                <pre><h5 class="productTexts">Preferences   </h5></pre>
+
+                <div class=img>
+                    <img id="down1" src="https://cdn.onlinewebfonts.com/svg/img_69892.png" width="15px" height="10px"/>
+                    <!-- <img class="up" src="https://image.flaticon.com/icons/png/512/37/37559.png" width="15px" height="10px"/> -->
+                </div>
+            </div>
+
+            <div id="flexx6">
+                <form class="up" id="form6">
+                
+                <div class="check">
+                <label for="scales">Cruelty-Free</label>
+                <input type="checkbox" id="scales" name="scales" value="Nyaka naturals"/>
+                
+                </div>
+
+                <div class="check">
+                <label for="scales">Paraben-Free</label>
+                <input type="checkbox" id="scales" name="scales" value="Bodywash"/>
+                
+                </div>
+
+                <div class="check">
+                <label for="scales">Natural</label>
+                <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                
+                </div>
+
+                <div class="check">
+                    <label for="scales">Vegan</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                <div class="check">
+                    <label for="scales">Organic</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+                
+                <div class="check">
+                    <label for="scales">Herbel</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                </form> 
+            </div>
+        </div>
+
+
+        <div id="categ7">
+
+            <div id="arrowdiv" onclick="changeit(7)">
+                <pre><h5 class="productTexts">Concern   </h5></pre>
+
+                <div class=img>
+                    <img id="down1" src="https://cdn.onlinewebfonts.com/svg/img_69892.png" width="15px" height="10px"/>
+                    <!-- <img class="up" src="https://image.flaticon.com/icons/png/512/37/37559.png" width="15px" height="10px"/> -->
+                </div>
+            </div>
+
+            <div id="flexx7">
+                <form class="up" id="form7">
+                
+                <div class="check">
+                <label for="scales">Dryness</label>
+                <input type="checkbox" id="scales" name="scales" value="Nyaka naturals"/>
+                
+                </div>
+
+                <div class="check">
+                <label for="scales">Dark-Spots/Pigmentation</label>
+                <input type="checkbox" id="scales" name="scales" value="Bodywash"/>
+                
+                </div>
+
+                <div class="check">
+                <label for="scales">Dullness</label>
+                <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                
+                </div>
+
+                <div class="check">
+                    <label for="scales">Brightening</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                <div class="check">
+                    <label for="scales">Acme/Blemishes</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+                
+                <div class="check">
+                    <label for="scales">Pores/Blackheads/Whiteheads</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                <div class="check">
+                    <label for="scales">Anti-Ageging</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                
+                <div class="check">
+                    <label for="scales">Fine Lines/Wrinkles</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                
+                <div class="check">
+                    <label for="scales">Oil Control</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                
+                <div class="check">
+                    <label for="scales">Sun-Protection</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                
+                <div class="check">
+                    <label for="scales">Anti-Pollution</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                </form> 
+            </div>
+        </div>
+
+
+        <div id="categ8">
+
+            <div id="arrowdiv" onclick="changeit(8)">
+                <pre><h5 class="productTexts">Formulation   </h5></pre>
+
+                <div class=img>
+                    <img id="down1" src="https://cdn.onlinewebfonts.com/svg/img_69892.png" width="15px" height="10px"/>
+                    <!-- <img class="up" src="https://image.flaticon.com/icons/png/512/37/37559.png" width="15px" height="10px"/> -->
+                </div>
+            </div>
+
+            <div id="flexx8">
+                <form class="up" id="form8">
+                
+                <div class="check">
+                <label for="scales">Liquid</label>
+                <input type="checkbox" id="scales" name="scales" value="Nyaka naturals"/>
+                
+                </div>
+
+                <div class="check">
+                <label for="scales">Cream</label>
+                <input type="checkbox" id="scales" name="scales" value="Bodywash"/>
+                
+                </div>
+
+                <div class="check"> 
+                <label for="scales">Mask</label>
+                <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                
+                </div>
+
+                <div class="check">
+                    <label for="scales">Gel</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                <div class="check">
+                    <label for="scales">Oil</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+                
+                <div class="check">
+                    <label for="scales">Lotion/Body Butter</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                <div class="check">
+                    <label for="scales">Scrub</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                
+                <div class="check">
+                    <label for="scales">Bar</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                
+                <div class="check">
+                    <label for="scales">Foam</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                
+                <div class="check">
+                    <label for="scales">Serum</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                
+                <div class="check">
+                    <label for="scales">Pack</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                </form> 
+            </div>
+        </div>
+
+
+        <div id="categ9">
+
+            <div id="arrowdiv" onclick="changeit(9)">
+                <pre><h5 class="productTexts">Ingredient   </h5></pre>
+
+                <div class=img>
+                    <img id="down1" src="https://cdn.onlinewebfonts.com/svg/img_69892.png" width="15px" height="10px"/>
+                    <!-- <img class="up" src="https://image.flaticon.com/icons/png/512/37/37559.png" width="15px" height="10px"/> -->
+                </div>
+            </div>
+
+            <div id="flexx9">
+                <form class="up" id="form9">
+                
+                <div class="check">
+                <label for="scales">Aloo-veera</label>
+                <input type="checkbox" id="scales" name="scales" value="Nyaka naturals" id="lastc"/>
+                
+                </div>
+
+                <div class="check">
+                <label for="scales">Neem</label>
+                <input type="checkbox" id="scales" name="scales" value="Bodywash"/>
+                
+                </div>
+
+                <div class="check"> 
+                <label for="scales">Charcoal</label>
+                <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                
+                </div>
+
+                <div class="check">
+                    <label for="scales">Turmeric</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                <div class="check">
+                    <label for="scales">Honey</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+                
+                <div class="check">
+                    <label for="scales">Shea Butter</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                <div class="check">
+                    <label for="scales">Green Tea</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                
+                <div class="check">
+                    <label for="scales">Coconut</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                
+                <div class="check">
+                    <label for="scales">Papaya</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                
+                <div class="check">
+                    <label for="scales">SandalWood</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                
+                <div class="check">
+                    <label for="scales">Pack</label>
+                    <input type="checkbox" id="scales" name="scales" value="Serum"/>
+                    
+                </div>
+
+                </form> 
+            </div>
+        </div>
+
+
+
+        
+
+    </div>
+
+    
+    
+</div>  
+
+<!-- Mapped div -->
+<div id="productsContDk">
+  
+          
+
+
+</div>
+</div>
+
+<div id="fotter">
+    <div id="footer_container1Dk">
+
+        <div class="footer_contCdiv">
+            <i class="fas fa-envelope fa-2x msgIconDk"></i>
+            <p id="msgIconPara">GET SPECIAL DISCOUNT ON YOUR INBOX</p>
+            <input id="inputFooterDk" type="text" placeholder="Your Email"/>
+            <button id="btnFooterDk">Send</button>
+    
+        </div>
+    
+        <div class="footer_contCdiv">
+            <i class="fas fa-phone-alt fa-2x msgIconDk"></i>
+            <p id="phnIconPara">FOR ANY HELP YOU MAY CALL US AT<br>1800-267-4444</p>
+            <br>
+            <p id="contactTimingDk">(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</p>
+    
+    
+        </div>
+    
+    </div>
+    
+    
+    
+    <div id="footer_container2Dk">
+    
+    
+        <div class="footer_cDivuLDk">
+            <ul style="color: white; list-style: none; margin-left: 10%;">
+                <li><h2 style="margin-top: 15%;">NYKAA<br>MAN</h2></li>
+                <li class="listParaDk list_para_hover">WHO ARE WE?</li> 
+                <li class="listParaDk list_para_hover">CAREERS</li>
+                <li class="listParaDk list_para_hover">AUTHENTICITY</li>
+                <li class="listParaDk list_para_hover">PRESS</li>
+                <li class="listParaDk list_para_hover">TESTIMONIALS</li>
+            </ul>
+        </div>
+    
+        <div class="footer_cDivuLDk">
+            <ul style="color: white; list-style: none; margin-top: 15%;">
+                <li class="listParaDk list_para_hover"  style="font-size: 16px;">HELP</li>
+                <li class="listParaDk list_para_hover">CONTACT US</li> 
+                <li class="listParaDk list_para_hover">FREQUENTLY ASKED QUESTIONS</li>
+                <li class="listParaDk list_para_hover">STORE LOCATOR</li>
+                <li class="listParaDk list_para_hover">CANCELLATION & RETURN</li>
+                <li class="listParaDk list_para_hover">SHIPPING & DELIVERY POLICY</li>
+            </ul>
+            
+        </div>
+        <div class="footer_cDivuLDk">
+            <ul style="color: white; list-style: none; margin-top: 15%;">
+                <li class="listParaDk list_para_hover"  style="font-size: 16px;">QUICK LINKS</li>
+                <li class="listParaDk list_para_hover">BRAND STORE</li> 
+                <li class="listParaDk list_para_hover">OFFER ZONE</li>
+                <li class="listParaDk list_para_hover">SITE MAP</li>
+            </ul>
+    
+        </div>
+        <div class="footer_cDivuLDk">
+    
+            <ul style="color: white; list-style: none; margin-top: 15%;">
+                <li class="listParaDk list_para_hover" style="font-size: 16px;">TOP CATEGORIES</li>
+                <li class="listParaDk list_para_hover">SHAVING</li> 
+                <li class="listParaDk list_para_hover">HAIR CARE</li>
+                <li class="listParaDk list_para_hover">PERSONAL CARE</li>
+                <li class="listParaDk list_para_hover">PERFUMES & DEOS</li>
+                <li class="listParaDk list_para_hover">WELLNESS</li>
+            </ul>
+        </div>
+        <div class="footer_cDivuLDk">
+            <ul style="color: white; list-style: none; margin-top: 15%;">
+                <li  style="font-size: 16px;"> LUXE </li>
+                <li class="listParaDk list_para_hover">BATH AND BODY</li> 
+                <li class="listParaDk list_para_hover">HAIR</li>
+                <li class="listParaDk list_para_hover">FRAGRANCE</li>
+                <li class="listParaDk list_para_hover">SKIN</li>
+            </ul>
+        </div>
+    
+    </div>
+    
+    
+    <div id="footer_container3Dk">
+    
+        <div id="footer_containerCdiv">
+    
+            <div style="margin-top: 5%;">
+            <img style="display: inline-block;" src="https://adn-static1.nykaa.com/media/listing/nykaaman/nykaaman_shipping.svg" alt="img">
+            <p class="freeShippingparaDk">FREE SHIPPING</p>
+            <hr style="margin-left: 20%; color: lightgray; margin-top: -1px; width: 85%;">
+            <p class="footerLAst2ndPara">for orders above<br>INR499</p>
+            </div>
+    
+    
+            <div style="margin-top: 5%;">
+    
+                <img style="display: inline-block;" src="https://adn-static1.nykaa.com/media/listing/nykaaman/nykaaman_genuine.svg" alt="img">
+                <p style="margin-left: 5%;" class="freeShippingparaDk">AUTHENTIC<br>PRODUCTS</p>
+                <hr style="margin-left: 25%; color: lightgray; margin-top: -1px; width: 85%;">
+                <p class="footerLAst2ndPara">Sourced Directly from<br> Brands/ Authorised Distributors</p>
+    
+            </div>
+    
+    
+            <div style="margin-top: 5%;">
+    
+               <p class="freeShippingparaDk socialMediaPara">SHOW US SOME LOVE ON SOCIAL MEDIA</p>
+               <i class="fab instaFbIcon fa-instagram-square fa-2x"></i>
+               <i style="margin-left: 5%;" class="fab instaFbIcon fa-facebook-square fa-2x"></i>
+    
+            </div>
+    
+        </div>
+    </div>
+    
+    
+    <div id="footer_container4Dk">
+    
+        <div id="footer_containerCd4Dk">
+            <p class="footerMostParaDk">TERMS & CONDITIONS</p>
+            <p class="footerMostParaDk">SHIPPING POLICY</p>
+            <p class="footerMostParaDk">CANCELLATION POLICY</p>
+            <p class="footerMostParaDk">PRIVACY POLICY</p>
+    
+            <p id="footerMostPara2Dk">© 2021 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!---cart html-->
+
+<!--cart start-->
+<div id="test">
+
+   
+    <div id="cart-items">
+        
+      <div id="heading">
+        <span onclick="myFunction()"><i class="fas fa-angle-left fa-2x"></i></span>
+        <span><h2>Shopping Bag</h2></span>
+      </div>
+  <div id="scrollBox">
+  
+  
+      <div id="hide">
+  
+        <div class="V-firstDiv">
+          <input type="checkbox" id="check" checked />
+          <label for=""
+            >Extra 10% OFF on orders above Rs 1000. Use Code NYKAAMAN10.</label
+          >
+        </div>
+        <div class="V-SecondDiv">
+          <input type="checkbox" id="check" />
+          <label id="reward" for="">2000 Reward Points Rs20</label>
+          <p>Apply</p>
+        </div>
+      </div>
+      <hr>
+      <div id="V-cart-products"></div>
+      <div id="V-total-details">
+          <hr>
+        <h2>Payment Details</h2>
+        <div id="V-total-price">
+          <table>
+            <tbody>
+              <tr>
+                <td class="td1" >Bag Total</td>
+                <td id="total">0</td>
+              </tr>
+              <tr>
+                <td class="td1">Bag Discount</td>
+                <td id="bigDis">0</td>
+              </tr>
+              <tr>
+                <td class="td1">Sub Total</td>
+                <td id="subtotal">0</td>
+              </tr>
+              <tr>
+                <td class="td1">Shipping Charge</td>
+                <td id="shipping">0</td>
+              </tr>
+              <tr>
+                <td class="td1">Grand Total</td>
+                <td id="grand">0</td>
+              </tr>
+            </tbody>
+          </table>
+          <input type="text" name="" id="coupon" placeholder="Have a Coupon ?">
+        </div>
+        <hr>
+        <div>
+  
+        </div>
+            <table id="tble">
+                <tbody>
+                    <tr>
+                        <td>Grand Total</td>
+                    </tr>
+                    <tr><td id="grand_total">0</td></tr>
+  
+                </tbody>
+            </table>
+            <button id="gotopayment666">PROCEED</button>
+        </div>
+    </div>
+    <div>
+    </div>
+  </div>
+  </div>
+
+ <!---cart end-->
+
+
+<!--cart html end-->
+
+</body>
+</html>
+
+<script>
+
+//  async function dk() {
+//         let url = "https://ap-south-1.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/nykaaa-qivwv/service/Nykaaman/incoming_webhook/Nykaaman?secret=saurabh";
+//         let res = await fetch(url);
+//         let data = await res.json();
+//         // console.log(data);
+//         localStorage.setItem("allproducts",JSON.stringify(data));
+         
+//     }
+
+//     dk();
+// console.log(product)   
+// import navbar from "./navbar/navbar1.js"
+    // document.getElementById("navbar").innerHTML = navbar()
+
+    // import footer from "/footer.js"
+
+    // document.getElementById("fotter").innerHTML = footer()
+    // console.log(document.getElementById("sizecheck3").value)
+
+    // Selection option
+    document.getElementById("filters").setAttribute("class","productTexts")
+    document.getElementById("contain").addEventListener("click",change)
+    var click_c=0
+    function change() {
+        click_c++
+        // Changing arrow on click
+        if(click_c%2==0) {
+            // console.log(click_c)
+            document.getElementById("down").removeAttribute("src")
+            document.getElementById("down").setAttribute("src","https://image.flaticon.com/icons/png/512/37/37559.png")
+    
+
+
+        document.querySelector("form").removeAttribute(".up")
+        document.querySelector("form").setAttribute("class","show")
+        }
+        else {
+
+        document.getElementById("down").removeAttribute("src")
+        document.getElementById("down").setAttribute("src","https://cdn.onlinewebfonts.com/svg/img_69892.png")
+
+        document.querySelector("form").removeAttribute(".show")
+        document.querySelector("form").setAttribute("class","up")   
+        }
+
+
+    }
+
+    // Categories
+    // document.getElementById("arrowdiv").addEventListener("click",changeit)
+    
+  var click_f=0
+    function changeit(a) {
+        
+        // console.log(a)
+        console.log("hety")
+        // show
+        // 
+        
+        if(click_f%2==0) {
+            // console.log(click_f)
+            // console.log("ohyea")
+            
+            // console.log(`form${a}`)
+            document.getElementById("down1").removeAttribute("src")
+            document.getElementById("down1").setAttribute("src","https://image.flaticon.com/icons/png/512/37/37559.png")
+            
+            document.getElementById(`form${a}`).removeAttribute(".up")
+            // console.log(document.getElementById(`form1`))
+            document.getElementById(`form${a}`).setAttribute("class","show")
+        }
+        else {
+            // console.log("Nope")
+            document.getElementById("down1").removeAttribute("src")
+        document.getElementById("down1").setAttribute("src","https://cdn.onlinewebfonts.com/svg/img_69892.png")
+
+            document.getElementById(`form${a}`).removeAttribute(".show")
+            document.getElementById(`form${a}`).setAttribute("class","up")   
+        }
+        click_f++
+    }
+
+
+
+    // mapping script
+    let containerP = document.getElementById("productsContDk");
+
+let product_data = JSON.parse(localStorage.getItem("allproducts"));
+console.log(product_data)
+displayProducts(product_data);
+localStorage.setItem("productDetails",JSON.stringify(product_data))
+
+
+function displayProducts(product_data) {
+containerP.innerHTML = null;
+   console.log(product_data);
+
+   product_data.forEach((item) => {
+
+   let prod_div = document.createElement("div");
+   prod_div.setAttribute("id", "productChildDiv")
+ 
+   let p_heading = document.createElement("h4");
+   p_heading.setAttribute("class", "productTexts")
+   p_heading.innerText = `FEATURED`;
+   p_heading.style.marginLeft = "10px";
+   p_heading.style.color = "#003243";
+
+   let img = document.createElement("img")
+    img.addEventListener("click",()=>{
+        localStorage.setItem("individual",JSON.stringify(item))
+        window.location.href= "/unqProduct"  
+    })
+
+   img.setAttribute("src", item.images[0]);
+   img.style.height = "250px";
+   img.style.width = "230px";
+   img.style.marginLeft = "20px";
+
+   let prod_name = document.createElement("p");
+   prod_name.setAttribute("class", "productTexts")
+   prod_name.innerText = item.name;
+   prod_name.style.textAlign = "center"
+
+
+   let mrp_div = document.createElement("div");
+   mrp_div.setAttribute("id", "mrp_div");
+
+   let mrp = document.createElement("p");
+   mrp.setAttribute("class", "productTexts")
+   mrp.innerText = `MRP:`;
+   mrp.style.marginTop = "16px";
+   mrp.style.color = "silver";
+
+
+   let p_old_price = document.createElement("p");
+   p_old_price.setAttribute("class", "productTexts");
+   p_old_price.style.textDecoration = "line-through";
+    p_old_price.innerText = `₹${item.oldPrice.$numberInt}`;
+    p_old_price.style.color = "silver";
+   
+
+   let p_new_price = document.createElement("p");
+   p_new_price.setAttribute("class", "productTexts");
+    p_new_price.innerText = `₹${item.newprice.$numberInt } |`;
+
+
+   let p_discount = document.createElement("discount");
+   p_discount.setAttribute("class", "productTexts");
+    p_discount.innerText = item.discount;
+    
+    p_discount.style.marginTop = "16px";
+
+
+   let rating_div = document.createElement("div");
+   rating_div.setAttribute("id", "rating_div");
+
+   
+  let star_rating1 = document.createElement("span");
+   star_rating1.setAttribute("class", "fa fa-star");
+
+   let star_rating2 = document.createElement("span");
+   star_rating2.setAttribute("class", "fa fa-star");
+
+   let star_rating3 = document.createElement("span");
+   star_rating3.setAttribute("class", "fa fa-star");
+
+   let star_rating4 = document.createElement("span");
+   star_rating4.setAttribute("class", "fa fa-star");
+
+   let star_rating5 = document.createElement("span");
+   star_rating5.setAttribute("class", "fa fa-star");
+
+   rating_div.append(star_rating1,star_rating2,star_rating3,star_rating4,star_rating5)
+
+// ADD TO BAG BUTTON SECTION //
+
+   let btn_div = document.createElement("div");
+   btn_div.setAttribute("id", "btn_div");
+
+   btn_div.addEventListener("mouseenter", () => {
+    btn_div.innerHTML = null;
+
+    let btn_addTobag = document.createElement("button");
+
+    btn_addTobag.addEventListener("click",function () {    
+      var a= JSON.parse(localStorage.getItem("bagdata")) || []
+      a.push(item)
+      localStorage.setItem("bagdata",JSON.stringify(a))
+      location.reload()
+
+      // hide();
+      
+    })
+    btn_addTobag.setAttribute("id","btn_addTobag");
+    btn_addTobag.setAttribute("class", "productTexts");
+    btn_addTobag.textContent = "ADD TO BAG"
+    btn_div.append(btn_addTobag)
+
+   });
+   btn_div.addEventListener("mouseleave", () => {
+       btn_div.innerHTML = null;
+   });
+
+    // FINISHED ADD TO BAG BUTTON SECTION //
+
+   if (item.ratings.$numberDouble > 4.5) {
+    p_heading.innerText = `BESTSELLER`;
+   } else {
+    p_heading.innerText = `FEATURED`;
+   }
+
+   mrp_div.append(mrp,p_old_price, p_new_price, p_discount);
+
+   let show = Math.floor(Number(item.ratings.$numberDouble));
+
+   let star_spans = rating_div.childNodes;
+   for(let i = 0; i < show; i++) {
+
+    star_spans[i].setAttribute("id", "color_stars")
+   }
+   prod_div.append(p_heading, img, prod_name, mrp_div, rating_div, btn_div)
+   containerP.append(prod_div)
+   })
+}
+
+let a=document.querySelector("form").childNodes
+for(var b=1; b<a.length; b=b+2) {
+    let c=a[b].childNodes
+    let d=c[3]
+    d.addEventListener("click",function(){
+        document.getElementById("val").textContent=d.value
+        if(d.value=="Price : High to Low") {
+            document.getElementById("productsContDk").innerHTML=null;
+            product_data.sort(function(a,b) {return b.newprice.$numberInt-a.newprice.$numberInt})
+            displayProducts(product_data)
+        }
+        else if(d.value == "Price : Low to High") {
+            document.getElementById("productsContDk").innerHTML=null;
+            product_data.sort(function(a,b) {return a.newprice.$numberInt-b.newprice.$numberInt})
+            displayProducts(product_data)
+        }
+        else if(d.value == "Coustmer Top Rated") {
+            document.getElementById("productsContDk").innerHTML=null;
+            product_data.sort(function(a,b) {return b.ratings.$numberDouble-a.ratings.$numberDouble})
+            displayProducts(product_data)
+        }
+        else if(d.value == "Discount") {
+            document.getElementById("productsContDk").innerHTML=null;
+            product_data.sort(function(a,b) {
+                // console.log(a.discount.split(" "))
+                let a1=a.discount.split(" ")
+                let a2=a1[0];
+                // console.log(a2)
+                let a3=a2.split("")
+                
+                a3.pop()
+                // console.log(a3)
+                let a4=a3.join("")
+
+                let b1=b.discount.split(" ")
+                let b2=b1[0];
+                let b3=b2.split("")
+                b3.pop()
+                let b4=b3.join("")
+                console.log(b,a)
+                return b4-a4
+                
+           
+            })
+            displayProducts(product_data)
+        }
+
+        else if(d.value == "Name") {
+            document.getElementById("productsContDk").innerHTML=null;
+            product_data.sort(function(a,b) {
+                if(a.name[0]>b.name[0]) return 1
+                if(a.name[0]<b.name[0]) return -1
+            })
+            displayProducts(product_data)
+        }
+        else {
+            document.getElementById("productsContDk").innerHTML=null;
+            product_data.sort(function(a,b) {
+                if(a.name[0]>b.name[0]) return -1
+                if(a.name[0]<b.name[0]) return 1
+            })
+            displayProducts(product_data)
+        }
+    })
+}
+document.getElementById("GoToLogin").addEventListener("click",()=>{
+    window.location.href="account.html"
+})
+document.getElementById("openCart").addEventListener("click",()=>{
+    // window.location.href="cart.html"
+    hide();
+})
+
+function indpage(item) {
+    console.log(item)
+    localStorage.setItem("product",item)
+}
+
+document.getElementById("imgSetter").addEventListener("click",()=>{
+  console.log("yes")
+  window.location.href="index.html"
+})
+
+
+
+
+</script>
+<script src="/js/slider.js"></script>
+<script src="/js/Cart.js"></script>

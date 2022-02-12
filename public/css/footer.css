@@ -1,0 +1,169 @@
+#footer_container1Dk{
+    border: 1px solid transparent;
+    height: 180px;
+    margin-top: 3%;
+    background-color: #1e6b7b;
+    display: flex;
+}
+.footer_contCdiv{
+    width: 31%;
+    height: 130px;
+    border: 1px solid transparent;
+    margin: auto;
+}
+.msgIconDk{
+    color: white;
+    display: inline-block;
+    margin-top: 8px;
+    position: absolute;
+}
+#msgIconPara{
+    color: white;
+    display: inline-block;
+    margin-left: 48px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    font-family: "Source Sans Pro", Roboto, Arial, sans-serif;
+    position: absolute;
+}
+#inputFooterDk{
+    background-color: #1e6b7b;
+    color: white;
+    height: 32px;
+    width: 45%;
+    margin-top: 59px;
+    border: none;
+   border-bottom: 1px solid white;
+   outline: none;
+}
+#inputFooterDk::placeholder{
+    color: white;
+    border: none;
+    font-family: "Source Sans Pro", Roboto, Arial, sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 14px;
+}
+#btnFooterDk{
+    margin-left: 1%;
+    height: 40px;
+    width: 65px;
+    color:white;
+    background-color: #1e6b7b;
+    border: 1px solid white;
+    font-family: "Source Sans Pro", Roboto, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+#contactTimingDk{
+    font-family: "Source Sans Pro", Roboto, Arial, sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 7%;
+    margin-left: 7%;
+}
+#phnIconPara{
+    color: white;
+    font-size: 16px;
+    font-family:"Source Sans Pro", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 15px;
+    margin-left: 45px;
+    position: absolute;
+    margin-top: 7px;
+}
+#footer_container2Dk{
+    border: 1px solid transparent;
+    height: 295px;
+    background-color: #003243;
+    display: flex;
+    gap: 5px;
+}
+.footer_cDivuLDk{
+    width: 25%;
+    height: 280px;
+    border: 1px solid transparent;
+    margin-left: 1%;
+}
+.listParaDk{
+    font-family:"Source Sans Pro", Roboto, Arial, sans-serif; ;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 6%;
+}
+.list_para_hover:hover{
+    color: rgb(1, 105, 105);
+}
+#footer_container3Dk{
+    border: 1px solid transparent;
+    height: 290px;
+}
+#footer_containerCdiv{
+    width: 80%;
+    height: 280px;
+    margin: auto;
+    margin-left: 15%;
+    border: 1px solid transparent;
+    display: flex;
+    gap: 21%;
+}
+.freeShippingparaDk{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Source Sans Pro", Roboto, Arial, sans-serif;
+}
+.footerLAst2ndPara{
+    font-size: 14px;
+    font-family: "Source Sans Pro", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 21%;
+}
+.socialMediaPara{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Source Sans Pro", Roboto, Arial, sans-serif;
+}
+.instaFbIcon{
+    color: #0e708f;
+    margin-left: 35%;
+}
+#footer_container4Dk{
+    height: 120px;
+    border: 1px solid transparent;
+    background-color: #003243;
+}
+#footer_containerCd4Dk{
+    border: 1px solid transparent;
+    width: 50%;
+    margin: auto;
+    height: 110px;
+}
+.footerMostParaDk{
+    display: inline-block;
+    color: white;
+    margin-left: 3%;
+    font-size: 14px;
+    font-family: "Source Sans Pro", Roboto, Arial, sans-serif;;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 3%;
+}
+#footerMostPara2Dk{
+    color: white;
+    margin-left: 24%;
+    margin-top: 4%;
+    font-size: 12px;
+    font-family: "Source Sans Pro", Roboto, Arial, sans-serif;;
+    font-weight: 400;
+    line-height: 20px;
+}

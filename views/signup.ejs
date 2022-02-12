@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/signup.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/336aa36eed.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="signUpContainerDk">
+        <i class="fas fa-times fa-2x" id="crossIconSignUpDk"></i>
+        <p id="signUpH_Dk">ALMOST THERE!</p>
+        <hr style="opacity: 0.5; width: 90%;">
+
+        <div id="inputSignUpContainer">
+            <input class="inputSignUpDk" name="name" id="fullNameSignup" type="text" placeholder="Full Name">
+
+            <input class="inputSignUpDk" name="email" id="emailSignup" type="email" placeholder="Email Address">
+
+        </div>
+
+        <br><br>
+
+        <div id="btn_signupC">
+            <button id="btn_signUpDk">SAVE</button>
+        </div>
+   
+    </div>
+    
+    
+
+</body>
+</html>
+<script>
+
+document.getElementById("crossIconSignUpDk").addEventListener("click", () => {
+    window.location = "/users/login";
+});
+
+
+let btn_signUp_save = document.getElementById("btn_signUpDk");
+
+let userNE_ar = JSON.parse(localStorage.getItem("UserDetails")) || ["Account"];
+
+
+btn_signUp_save.addEventListener("click", () =>{
+
+    let userD = {
+        displayName:  document.getElementById("fullNameSignup").value,
+        email:  document.getElementById("emailSignup").value,
+    }
+    // userNE_ar.push(userD);
+    localStorage.setItem("UserDetails", JSON.stringify(userD)) || "Account";
+
+    window.location = "/users/authdone";
+});
+
+</script>

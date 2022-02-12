@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="/logo.png"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/account.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/336aa36eed.js" crossorigin="anonymous"></script>
+    <title>Account</title>
+    
+</head>
+<body>
+
+    <div id="signInContainerDk">
+        <i class="fas fa-times fa-2x" id="crossIconDk"></i>
+
+        <div id="signInC_ContainerDk">
+
+            <p id="signInH_Dk">Sign in</p>
+            <p style=" margin-top: -20px;" class="signInParaDk">To quickly find your favourites items, saved addresses and payments.</p>
+            <hr style="opacity: 0.5;">
+            <p class="signInParaDk">Register and earn 2000 reward points</p>
+
+        </div>
+
+        <!-- Image Section -->
+        <div id="account_imgs">
+
+            <i style="color: #175663;" class="fas fa-gifts fa-3x"></i>
+            <i style="color: #285e9c" class="fas fa-gift fa-7x"></i>
+            <i style="color: #1cc1e4;" class="fas fa-gifts fa-3x"></i>
+
+        </div>
+
+        <!-- ________________________ -->
+
+        <div id="signInBtnsDk">
+
+           <a href="users/login"><button id="btn_phnorEmail">Enter Phone Number or Email </button></a> 
+
+            <div id="btnFooterGoogle">
+
+              <a href="/auth/google"><img id="imgGoogleDk" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4mqpyZlsPfnmFCjSux93QSWqnSFuuIgcfHDD8-1V6pfqoxw6om3CycNnuttpIt40aYQ0&usqp=CAU" alt="img"></a>
+                <a href="/auth/google" style="text-decoration: none;"><p id="googleParaDk">Google</p></a>
+
+            </div>
+
+        </div>
+
+        <div id="footer_signInPara">
+            <p style="font-size: 14px; line-height: 20px;" class="signInParaDk">By continuing, you agree that you have read and accept our T&Cs and Privacy Policy.</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
+<script>
+    document.getElementById("crossIconDk").addEventListener("click", () => {
+        window.location = "/";
+    })
+</script>

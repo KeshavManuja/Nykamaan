@@ -1,0 +1,68 @@
+{
+
+  "version": "1.0.0",
+
+  "description": "",
+
+  "main": "index.js",
+
+  "scripts": {
+
+    "server": "nodemon src/server"
+
+  },
+
+  "repository": {
+
+    "type": "git",
+
+    "url": "git+https://github.com/saurabh0413/Nykaaman.git"
+
+  },
+
+  "keywords": [],
+
+  "author": "",
+
+  "license": "ISC",
+
+  "bugs": {
+
+    "url": "https://github.com/saurabh0413/Nykaaman/issues"
+
+  },
+
+  "homepage": "https://github.com/saurabh0413/Nykaaman#readme",
+
+  "dependencies": {
+
+    "bcrypt": "^5.0.1",
+
+    "body-parser": "^1.19.1",
+
+    "dotenv": "^14.2.0",
+
+    "ejs": "^3.1.6",
+
+    "express": "^4.17.2",
+
+    "express-session": "^1.17.2",
+
+    "express-validator": "^6.14.0",
+
+    "jsonwebtoken": "^8.5.1",
+
+    "method-override": "^3.0.0",
+
+    "mongoose": "^6.1.7",
+
+    "passport": "^0.5.2",
+
+    "passport-google-oauth2": "^0.2.0",
+
+    "razorpay": "^2.8.0"
+
+  }
+
+}
+

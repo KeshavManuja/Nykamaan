@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/336aa36eed.js" crossorigin="anonymous"></script>
+    <title>Login/Register</title>
+</head>
+<body>
+    
+    <div id="loginInContainerDk">
+       <i class="fas fa-times fa-2x" id="crossIconLoginDk"></i>
+        <p id="logInH_Dk">LOGIN / REGISTER</p>
+        <hr style="opacity: 0.5; width: 90%;">
+
+        <div id="inputLoginContainer">
+           
+            <input id="inputLoginDk" type="number" value="" name="mobile" placeholder="Enter Email ID or Phone Number">
+
+        </div>
+
+        <br><br><br><br><br><br><br><br><br>
+
+        <div id="btnLoginProceedC">
+            <button id="btnLoginProceed">PROCEED</button>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+  document.getElementById("crossIconLoginDk").addEventListener("click", () => {
+        window.location = "/users";
+    });
+
+var userAr = JSON.parse(localStorage.getItem("userData")) || [];
+
+let bnt_proceed = document.getElementById("btnLoginProceed");
+
+bnt_proceed.addEventListener("click", () =>{
+    let user_mobile = document.getElementById("inputLoginDk").value;
+
+    if(user_mobile.length !== 10){
+        alert("Please enter 10 digit mobile number");
+    }  else {
+        let userD = {
+        mobile: user_mobile,
+    }
+    userAr.push(userD);
+    localStorage.setItem("userData", JSON.stringify(userAr));
+    window.location = "/users/otpverify";
+    }
+});
+
+
+</script>

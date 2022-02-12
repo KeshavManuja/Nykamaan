@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/x-icon" href="/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/navbar1.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <script src="https://kit.fontawesome.com/8d9bddce50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="primediv">
+
+        <div id="maincon">
+
+            <div id="navbar">
+                <div class="men">
+                    <div id="nykaa">NYKAA</div>
+                    <div>MAN</div>
+                </div>
+                <div class="vl"></div>
+
+
+
+                <div id="options">
+                    <div>
+                        <h3 id="log"><a href="/">1-LOGIN</a>
+                            <p id="email"></p>
+                        </h3>
+                    </div>
+
+                    <div class="vl"></div>
+                    <div>
+                        <h3 id="add"><a href="add2.html">2-ADDRESS</a>
+                            <p id="name">
+                        </h3>
+                    </div>
+                    <p></p>
+                    <div class="vl"></div>
+                    <div>
+                        <h3 id="pay">
+                            <p id="sirname"></p><a href="Payment.html">3-PAYMENT</a>
+                        </h3>
+                    </div>
+                    <div class="vl"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <h5 id="pay" style="margin-left: 5%;">CHOOSE PAYMENT METHOD</h5>
+        <div class="main">
+            <div id="logo">
+                <img src="https://epayments-support.ingenico.com/contentAsset/image/cea5be3b-f67e-45d9-9aab-2fc8176e67b3/fileAsset"
+                    width="100%" height="50%">
+            </div>
+            <div id="pricing">
+                <div id="itemcount">
+                    <div>
+                        <h4 id="itemsinbag"> n items in your bag</h4>
+                    </div>
+                    <div id="detailsicon">
+                        <p>DETAILS</p>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+
+                <!-- Mapped cart data -->
+                <div id="cartdata"></div>
+
+                <!-- Subtotal div -->
+                <div id="totaldiv">
+                    <div class="prtext">
+                        <p>Subtotal</p>
+                        <p id="subtotal">100</p>
+                    </div>
+
+                    <div class="prtext">
+                        <p>Shipping Charge</p>
+                        <p class="Shipping">FREE</p>
+                    </div>
+
+                    <div class="prtext Shipping">
+                        <p>Discount</p>
+                        <p id="discount">0</p>
+                    </div>
+
+                    <div class="prtext">
+                        <p>Use Reward Points(2000)</p>
+                        <p><b>APPLY</b></p>
+                    </div>
+
+                    <!-- Hr -->
+                    <hr>
+
+
+
+                </div>
+
+                <div class="prtext">
+                    <div>
+                        <p><b>Grand Total</b></p>
+                    </div>
+                    <div id="ftotal">
+                        <p id="totall"><b>302</b></p>
+                        <i id="hide_total_div" style="margin-left: 10%;" class="fas fa-angle-up"></i>
+                    </div>
+                    <!-- <hr> -->
+                </div>
+                <!-- <hr> -->
+                <button id="rzp-button1">Click here to PAY ></button>
+            </div>
+        </div>
+
+        <!-- footer -->
+
+        <div id="footer_div">
+            <div id="footer_container1Dk">
+
+                <div class="footer_contCdiv">
+                    <i class="fas fa-envelope fa-2x msgIconDk"></i>
+                    <p id="msgIconPara">GET SPECIAL DISCOUNT ON YOUR INBOX</p>
+                    <input id="inputFooterDk" type="text" placeholder="Your Email" />
+                    <button id="btnFooterDk">Send</button>
+
+                </div>
+
+                <div class="footer_contCdiv">
+                    <i class="fas fa-phone-alt fa-2x msgIconDk"></i>
+                    <p id="phnIconPara">FOR ANY HELP YOU MAY CALL US AT<br>1800-267-4444</p>
+                    <br>
+                    <p id="contactTimingDk">(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</p>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div id="footer_container2Dk">
+
+
+                <div class="footer_cDivuLDk">
+                    <ul style="color: white; list-style: none; margin-left: 10%;">
+                        <li>
+                            <h2 style="margin-top: 15%;">NYKAA<br>MAN</h2>
+                        </li>
+                        <li class="listParaDk list_para_hover">WHO ARE WE?</li>
+                        <li class="listParaDk list_para_hover">CAREERS</li>
+                        <li class="listParaDk list_para_hover">AUTHENTICITY</li>
+                        <li class="listParaDk list_para_hover">PRESS</li>
+                        <li class="listParaDk list_para_hover">TESTIMONIALS</li>
+                    </ul>
+                </div>
+
+                <div class="footer_cDivuLDk">
+                    <ul style="color: white; list-style: none; margin-top: 15%;">
+                        <li class="listParaDk list_para_hover" style="font-size: 16px;">HELP</li>
+                        <li class="listParaDk list_para_hover">CONTACT US</li>
+                        <li class="listParaDk list_para_hover">FREQUENTLY ASKED QUESTIONS</li>
+                        <li class="listParaDk list_para_hover">STORE LOCATOR</li>
+                        <li class="listParaDk list_para_hover">CANCELLATION & RETURN</li>
+                        <li class="listParaDk list_para_hover">SHIPPING & DELIVERY POLICY</li>
+                    </ul>
+
+                </div>
+                <div class="footer_cDivuLDk">
+                    <ul style="color: white; list-style: none; margin-top: 15%;">
+                        <li class="listParaDk list_para_hover" style="font-size: 16px;">QUICK LINKS</li>
+                        <li class="listParaDk list_para_hover">BRAND STORE</li>
+                        <li class="listParaDk list_para_hover">OFFER ZONE</li>
+                        <li class="listParaDk list_para_hover">SITE MAP</li>
+                    </ul>
+
+                </div>
+                <div class="footer_cDivuLDk">
+
+                    <ul style="color: white; list-style: none; margin-top: 15%;">
+                        <li class="listParaDk list_para_hover" style="font-size: 16px;">TOP CATEGORIES</li>
+                        <li class="listParaDk list_para_hover">SHAVING</li>
+                        <li class="listParaDk list_para_hover">HAIR CARE</li>
+                        <li class="listParaDk list_para_hover">PERSONAL CARE</li>
+                        <li class="listParaDk list_para_hover">PERFUMES & DEOS</li>
+                        <li class="listParaDk list_para_hover">WELLNESS</li>
+                    </ul>
+                </div>
+                <div class="footer_cDivuLDk">
+                    <ul style="color: white; list-style: none; margin-top: 15%;">
+                        <li style="font-size: 16px;"> LUXE </li>
+                        <li class="listParaDk list_para_hover">BATH AND BODY</li>
+                        <li class="listParaDk list_para_hover">HAIR</li>
+                        <li class="listParaDk list_para_hover">FRAGRANCE</li>
+                        <li class="listParaDk list_para_hover">SKIN</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div id="footer_container3Dk">
+
+                <div id="footer_containerCdiv">
+
+                    <div style="margin-top: 5%;">
+                        <img style="display: inline-block;"
+                            src="https://adn-static1.nykaa.com/media/listing/nykaaman/nykaaman_shipping.svg" alt="img">
+                        <p class="freeShippingparaDk">FREE SHIPPING</p>
+                        <hr style="margin-left: 20%; color: lightgray; margin-top: -1px; width: 85%;">
+                        <p class="footerLAst2ndPara">for orders above<br>INR499</p>
+                    </div>
+
+
+                    <div style="margin-top: 5%;">
+
+                        <img style="display: inline-block;"
+                            src="https://adn-static1.nykaa.com/media/listing/nykaaman/nykaaman_genuine.svg" alt="img">
+                        <p style="margin-left: 5%;" class="freeShippingparaDk">AUTHENTIC<br>PRODUCTS</p>
+                        <hr style="margin-left: 25%; color: lightgray; margin-top: -1px; width: 85%;">
+                        <p class="footerLAst2ndPara">Sourced Directly from<br> Brands/ Authorised Distributors</p>
+
+                    </div>
+
+
+                    <div style="margin-top: 5%;">
+
+                        <p class="freeShippingparaDk socialMediaPara">SHOW US SOME LOVE ON SOCIAL MEDIA</p>
+                        <i class="fab instaFbIcon fa-instagram-square fa-2x"></i>
+                        <i style="margin-left: 5%;" class="fab instaFbIcon fa-facebook-square fa-2x"></i>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div id="footer_container4Dk">
+
+                <div id="footer_containerCd4Dk">
+                    <p class="footerMostParaDk">TERMS & CONDITIONS</p>
+                    <p class="footerMostParaDk">SHIPPING POLICY</p>
+                    <p class="footerMostParaDk">CANCELLATION POLICY</p>
+                    <p class="footerMostParaDk">PRIVACY POLICY</p>
+
+                    <p id="footerMostPara2Dk">© 2021 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- rzor -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+
+        const price = localStorage.getItem("totalprice")
+        var options = {
+            "key": "rzp_test_eLwrqAde1iXXjF",
+            "amount": `${+price}` * 100,
+            "currency": "INR",
+            "name": "Nykaman",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDcJD09Q0m4l05BohZwUtZYJ2tpzmZy2LTXQ&usqp=CAU",
+
+            "theme": {
+                "color": "#66ccff"
+            },
+            "callback_url": "/sucess"
+        };
+        var razorpayObject = new Razorpay(options);
+        console.log(razorpayObject);
+        razorpayObject.on('payment.failed', function (response) {
+            console.log(response);
+            alert("This step of Payment Failed");
+        });
+
+        document.getElementById('rzp-button1').onclick = function (e) {
+            razorpayObject.open();
+            e.preventDefault();
+        }
+
+        var rzp1 = new Razorpay(options);
+        document.getElementById('rzp-button1').onclick = function (e) {
+            rzp1.open();
+            e.preventDefault();
+
+
+        }
+    </script>
+</body>
+</html>
+<script>
+   let userEmail = JSON.parse(localStorage.getItem("UserDetails"))
+    let email = document.getElementById("email")
+    email.innerText = `${userEmail.email}`
+    email.style.color = "rgb(82,83, 94)";
+    email.style.fontSize = "14px" 
+
+    let cartappend = document.getElementById("cartdata")
+
+    let data = JSON.parse(localStorage.getItem("bagdata"))
+    console.log('data:', data)
+    displayitems(data)
+
+    function displayitems(data) {
+        data.forEach(function (item) {
+            let mdiv = document.createElement("div")
+            mdiv.setAttribute("id", "mdiv")
+
+            let div1 = document.createElement("div")
+            div1.setAttribute("id", "imgdiv")
+
+            let img = document.createElement("img")
+            img.setAttribute("src", item.images[0])
+            img.style.width = "100%"
+            img.style.height = "70%"
+
+            div1.append(img)
+
+            let div2 = document.createElement("div")
+            div2.setAttribute("id", "detailsdiv")
+
+            let title = document.createElement("p")
+            title.textContent = item.name
+
+            let ml = document.createElement("p")
+            let ram = Math.floor(Math.random() * 100)
+            ml.innerHTML = `${ram} ml`
+
+            let lowerdiv = document.createElement("div")
+            lowerdiv.setAttribute("id", "lowerdiv")
+            let qty = document.createElement("p")
+            let num = 1
+            qty.innerHTML = `Qty : ${num}`
+
+            let pricediv = document.createElement("div")
+            pricediv.setAttribute("id", "pdiv")
+
+            let oldprice = document.createElement("p")
+            oldprice.textContent = `₹${item.oldPrice.$numberInt}`
+            oldprice.style.textDecoration = "line-through"
+            oldprice.style.marginRight = "5px"
+            let newprice = document.createElement("p")
+            newprice.textContent = `₹${item.newprice.$numberInt}`
+            pricediv.append(oldprice, newprice)
+            lowerdiv.append(qty, pricediv)
+            div2.append(title, ml, lowerdiv)
+            mdiv.append(div1, div2)
+            mdiv.style.width = "100%"
+            cartappend.append(mdiv)
+        })
+    }
+    let a = JSON.parse(localStorage.getItem("bagdata"))
+    let b = a.length
+    document.getElementById("itemsinbag").innerHTML = `${b} items in your cart`
+
+    var click_edit = 0
+    document.getElementById("detailsicon").addEventListener("click", () => {
+        if (click_edit % 2 == 0) {
+            let a = document.getElementById("detailsicon")
+            a.childNodes[1].innerHTML = "EDIT"
+            console.log(a.childNodes)
+
+            a.childNodes[3].outerHTML = '<i class="fas fa-angle-up" aria-hidden="true"></i>'
+
+            document.getElementById("cartdata").style.display = "none"
+        }
+        else {
+            let a = document.getElementById("detailsicon")
+            a.childNodes[1].innerHTML = "DETAILS"
+            console.log(a.childNodes)
+
+            // console.log(a.childNodes[3].classList)
+            a.childNodes[3].outerHTML = '<i class="fas fa-angle-down" aria-hidden="true"></i>'
+            document.getElementById("cartdata").style.display = "block"
+        }
+        click_edit++
+    })
+    // Grandtotal
+    var click_total = 0
+    // details change
+    document.getElementById("ftotal").addEventListener("click", () => {
+        if (click_total % 2 == 0) {
+
+            document.getElementById("totaldiv").style.display = "none"
+
+        }
+        else {
+            let a = document.getElementById("detailsicon")
+            a.childNodes[1].innerHTML = "DETAILS"
+            console.log(a.childNodes)
+            a.childNodes[3].outerHTML = `<i class="fas fa-angle-down" aria-hidden="true"></i>`
+            document.getElementById("totaldiv").style.display = "block"
+        }
+        click_total++
+    })
+    let totalprice = localStorage.getItem("totalprice")
+    document.getElementById("subtotal").textContent = `₹${totalprice}`
+    document.getElementById("totall").textContent = `₹${totalprice}`;
+    let discount = localStorage.getItem("discount");
+    document.getElementById("discount").innerText = `₹${discount}`;
+
+    let add = document.getElementById("name")
+    add.textContent = localStorage.getItem("address")
+    add.style.color = "rgb(82,83, 94)";
+    add.style.fontSize = "14px";
+    localStorage.removeItem("bagdata")
+    localStorage.removeItem("totalprice")
+</script>

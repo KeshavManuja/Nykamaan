@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/logo.png"/>
+    <link rel="stylesheet" href="/css/unqProduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="./navbar/navbar.css">
+    <link rel="stylesheet" href="/css/Cart.css">
+    <script src="https://kit.fontawesome.com/336aa36eed.js" crossorigin="anonymous"></script>
+    <title>Product</title>
+</head>
+<body>
+
+    <!-- Nav Bar -->
+<div id="VKdurgesh">
+
+    <div id="finalHeader">
+
+        <div id="header1Data">
+          <div id="messageDiv">
+            <!-- <p id="ptagS">
+                <marquee  scrollamount ="1" behavior="scroll" direction="up">Nykaa Man Ultimate Christmas Bash Sale:Upto 50% OFF</marquee>
+            </p> -->
+          </div>
+    
+          <div id="rightmessageDiv">
+            
+            <div id="button1Flex">
+                <i class="fas fa-gift fa-1x"></i>
+                <p style="color: white;margin-top: 5px;padding-left: 5px;font-size: 15px;">Gift Card</p>
+            </div>
+    
+            <div id="button2Flex">
+                <i class="fas fa-question-circle"></i>
+                <p style="color: white;margin-top: 5px;padding-left: 5px;font-size: 15px;">Help</p>
+            </div>
+    
+        </div>
+        </div>
+         <!---second header part-->
+    
+        <div id="header2Container">
+            <div id="setHeader2">
+                <div id="imgSetter">
+                    <img src="https://www.indiantelevision.com/sites/default/files/images/tv-images/2020/10/05/ny.jpg" alt="">
+                </div>
+                <div id="titleSetup">
+                    <span>CATEGORIES</span>
+                    <span>BRANDS</span>
+                    <span>GROOMING ADVICE</span>
+                </div>
+                <!-- <div id="inputSetup">
+                    <span><i class="fas fa-search"></i></span>
+                    <input id="inp" type="text"  placeholder="Search on Men">
+                    
+                </div> -->
+                <div class="search">
+                    <input id="inp" onclick="clickedInput()" placeholder="&#xf002 Search on Men" >
+                  </div>
+    
+                <div id="accountSetup">
+                    <img id="GoToLogin" class="imgIcon" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiMwMDAwMDAiPjxwYXRoIGQ9Ik04NiwxNC4zMzMzM2MtMTkuNzI2NTUsMCAtMzUuODMzMzMsMTYuMTA2OCAtMzUuODMzMzMsMzUuODMzMzNjMCwxOS43MjY1MyAxNi4xMDY3OSwzNS44MzMzMyAzNS44MzMzMywzNS44MzMzM2MxOS43MjY1NSwwIDM1LjgzMzMzLC0xNi4xMDY4IDM1LjgzMzMzLC0zNS44MzMzM2MwLC0xOS43MjY1MyAtMTYuMTA2NzksLTM1LjgzMzMzIC0zNS44MzMzMywtMzUuODMzMzN6TTg2LDI1LjA4MzMzYzEzLjkxNjgyLDAgMjUuMDgzMzMsMTEuMTY2NTIgMjUuMDgzMzMsMjUuMDgzMzNjMCwxMy45MTY4MSAtMTEuMTY2NTEsMjUuMDgzMzMgLTI1LjA4MzMzLDI1LjA4MzMzYy0xMy45MTY4MiwwIC0yNS4wODMzMywtMTEuMTY2NTIgLTI1LjA4MzMzLC0yNS4wODMzM2MwLC0xMy45MTY4MSAxMS4xNjY1MSwtMjUuMDgzMzMgMjUuMDgzMzMsLTI1LjA4MzMzek00NC43OTE2NywxMDAuMzMzMzNjLTguODQxODgsMCAtMTYuMTI1LDcuMjgzMTIgLTE2LjEyNSwxNi4xMjV2NC4yOTcyYzAsMTAuNTM4MDkgNi42ODE4OSwxOS45OTA1NCAxNi44NzM4NiwyNi40OTAwN2MxMC4xOTE5Nyw2LjQ5OTUzIDI0LjEzNjgyLDEwLjQyMTA2IDQwLjQ1OTQ3LDEwLjQyMTA2YzE2LjMyMjY1LDAgMzAuMjY3NSwtMy45MjE1MyA0MC40NTk0NywtMTAuNDIxMDZjMTAuMTkxOTcsLTYuNDk5NTMgMTYuODczODYsLTE1Ljk1MTk4IDE2Ljg3Mzg2LC0yNi40OTAwN3YtNC4yOTcyYzAsLTguODQxODggLTcuMjgzMTIsLTE2LjEyNSAtMTYuMTI1LC0xNi4xMjV6TTQ0Ljc5MTY3LDExMS4wODMzM2g4Mi40MTY2N2MzLjAzMzI5LDAgNS4zNzUsMi4zNDE3MSA1LjM3NSw1LjM3NXY0LjI5NzJjMCw1Ljk2Njc0IC0zLjg0MzI2LDEyLjI4NTgzIC0xMS45MDQ3OSwxNy40MjY3NmMtOC4wNjE1Myw1LjE0MDkzIC0yMC4wOTg1Myw4LjczNDM4IC0zNC42Nzg1NSw4LjczNDM4Yy0xNC41ODAwMSwwIC0yNi42MTcwMiwtMy41OTM0NSAtMzQuNjc4NTUsLTguNzM0MzdjLTguMDYxNTMsLTUuMTQwOTMgLTExLjkwNDc5LC0xMS40NjAwMiAtMTEuOTA0NzksLTE3LjQyNjc2di00LjI5NzJjMCwtMy4wMzMyOSAyLjM0MTcxLC01LjM3NSA1LjM3NSwtNS4zNzV6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" alt="">
+                    <span id="GoToLogin1" style="margin-top: 4px;">Account</span>
+                    <script>
+                      let name = JSON.parse(localStorage.getItem("UserDetails"))
+                      // console.log(name)
+                      document.getElementById("GoToLogin1").innerText = name.displayName
+
+                          </script>
+
+                    <img id="openCart" class="imgIcon" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiMwMDAwMDAiPjxwYXRoIGQ9Ik04NiwxMC43NWMtMTcuNzIwNywwIC0zMi4yNSwxNC41MjkzIC0zMi4yNSwzMi4yNWgtMjEuNWMtMi44NTU0NywwIC01LjIwNzAzLDIuMjI1NTggLTUuMzc1LDUuMDgxMDVsLTUuMzc1LDk2Ljc1Yy0wLjA4Mzk4LDEuNDY5NzMgMC40NjE5MiwyLjkzOTQ2IDEuNDY5NzMsMy45ODkyNmMxLjAwNzgxLDEuMDkxOCAyLjQzNTU0LDEuNjc5NjkgMy45MDUyNywxLjY3OTY5aDExOC4yNWMxLjQ2OTczLDAgMi44OTc0NiwtMC41ODc4OSAzLjkwNTI3LC0xLjY3OTY5YzEuMDA3ODEsLTEuMDQ5OCAxLjU1MzcyLC0yLjUxOTUzIDEuNDY5NzMsLTMuOTg5MjZsLTUuMzc1LC05Ni43NWMtMC4xNjc5NywtMi44NTU0NyAtMi41MTk1MywtNS4wODEwNSAtNS4zNzUsLTUuMDgxMDVoLTIxLjVjMCwtMTcuNzIwNyAtMTQuNTI5MjksLTMyLjI1IC0zMi4yNSwtMzIuMjV6TTg2LDIxLjVjMTEuODQxOCwwIDIxLjUsOS42NTgyMSAyMS41LDIxLjVoLTQzYzAsLTExLjg0MTc5IDkuNjU4MjEsLTIxLjUgMjEuNSwtMjEuNXpNMzcuMzMxMDUsNTMuNzVoMTYuNDE4OTV2MjEuNWgxMC43NXYtMjEuNWg0M3YyMS41aDEwLjc1di0yMS41aDE2LjQxODk1bDQuNzQ1MTEsODZoLTEwNi44MjgxMnoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==" alt="">
+                </div>
+            </div>
+        </div>
+    
+       
+    
+        <!--navbar html start-->
+        <div id="header3">
+            <ul id="subMenu">
+                <li><a href="">Shaving</a>
+    
+                    <div class="dropBox1" id="shaving">
+                        <div class="column1">
+                            <a href="">SHAVING APPLIANCES</a>
+                            <a href="">Shavers</a>
+                            <a href="">Trimmers</a>
+                          </div>
+    
+                          <div class="column2">
+                            <a href="">SHAVING TOOLS & <br>ACCESSORIES</a>
+                            <a href="">Razors & Cartridges</a>
+                            <a href="">Shaving Brushes</a>
+                          </div>
+          
+                          <div class="column3">
+                            <a href="">SHAVING CREAMS & <br>LOTIONS</a>
+                            <a href="">Shaving Creams</a>
+                            <a href="">Saving Foams,Gels,&Soaps</a>
+                            <a href="">Pre Shave & After Shave <br>Lotions</a>
+                          </div>
+    
+    
+                          <div class="column4">
+                            <a href="">SHAVING KITS</a>
+                          </div>
+                    </div>
+    
+                </li>
+                <li><a href="">Beard Care</a>
+                    <div class="dropBox1" id="beard">
+                        <div class="column1">
+                            <a href="">BEARD CARE</a>
+                            <a href="">Beard Oil</a>
+                            <a href="">Moustache Oil</a>
+                            <a href="">Beard Softner</a>
+                            <a href="">Beard Colour</a>
+                            <a href="">beard Serum</a>
+                            <a href="">Beard Cream</a>
+                            <a href="">Beard Balm & Butter</a>
+                            <a href="">Beard Wash</a>
+                            
+                          </div>
+    
+                          <div class="column2">
+                            <a href="">BEARD STYLING</a>
+                            <a href="">Beard & Moustache Wax</a>
+                            <a href="">Beard Combo</a>
+                            <a href="Beard Gel"></a>
+                          </div>
+          
+                          <div class="column3">
+                            <a href="">BEARD KITS</a>
+                          </div>
+                    </div>
+                </li>
+                <li><a href="">Hair</a>
+                    <div class="dropBox1" id="hair">
+                        <div class="column1">
+                            <a href="">HAIR CARE</a>
+                            <a href="">Shampoo</a>
+                            <a href="">Coditioner</a>
+                            <a href="">Hair Oils</a>
+                          </div>
+    
+                          <div class="column2">
+                            <a href="">HAIR STYLING</a>
+                            <a href="">Hair Gel & Waxes</a>
+                            <a href="">Hair Color</a>
+                          </div>
+          
+                          <div class="column3">
+                            <a href="">HAIR BRUSHES 7 <br>DRYERS</a>
+                            <a href="">Hair brushes & Combs</a>
+                            <a href="">Hair Dryers</a>
+                          </div>
+    
+                          <div class="column4">
+                            <a href="">SHOP BY CONCERN</a>
+                            <a href="">Razors & Cartridges</a>
+                            <a href="">Shaving Brushes</a>
+                          </div>
+          
+                          <div class="column5">
+                            <a href="">PROESSIONAL HAIR <br>CARE PRODUCTS</a>
+                          </div>
+                    </div>
+                </li>
+                <li><a href="product_page.html">Skin Care</a>
+                    <div class="dropBox1" id="skincare">
+                        <div class="column1">
+                            <a href="">FACE</a>
+                            <a href="">Face Wash</a>
+                            <a href="">Moisturizers</a>
+                            <a href="">Sunscreens</a>
+                            <a href="">Masks & Peels</a>
+                            <a href="">Scrubs & Exfoliators</a>
+                          </div>
+    
+                          <div class="column2">
+                            <a href="">MAKEUP FOR MEN</a>
+                            <a href="">Primer</a>
+                            <a href="">Concealer</a>
+                            <a href="">Foundation</a>
+                            <a href="">Mattiying Face Powder</a>
+                            <a href="">BB & CC Cream</a>
+                            <a href="">Brows</a>
+                            <a href="">Tools & Brushes</a>
+                          </div>
+          
+                          <div class="column3">
+                            <a href="">SKIN CARE KITS</a>
+                          </div>
+    
+                          <div class="column4">
+                            <a href="">SHOP BY CONCERN</a>
+                            <a href="">Dry Skin</a>
+                            <a href="">Oil Removal</a>
+                            <a href="">Acne</a>
+                            <a href="">Blackheads</a>
+                            <a href="">Tan Removal</a>
+                            <a href="">Dark Spots</a>
+                          </div>
+          
+                    </div>
+                </li>
+                <li><a href="">Personal Care</a>
+                    <div class="dropBox1" id="personal">
+                        <div class="column1">
+                            <a href="">BATH & BODY</a>
+                            <a href="">Bath & Body</a>
+                            <a href="">Body Wash / <br>Shower Gels</a>
+                            <a href="">Soaps</a>
+                            <a href="">Talc & Intimate <br>Care</a>
+                            <a href="">Body Lotions</a>
+                          </div>
+    
+                          <div class="column2">
+                            <a href="">HAIR CLIPPERS<br>& BODY<br>GROOMERS</a>
+                          </div>
+    
+                          <div class="column3">
+                            <a href="">DENTAL CARE</a>
+                            <a href="">Toothpaste</a>
+                            <a href="">Toothbrush</a>
+                            <a href="">Floss & Tongue <br>Cleaners</a>
+                            <a href="">Mouthwash</a>
+                            <a href="">Mouth Freshner</a>
+                          </div>
+          
+                          <div class="column4">
+                            <a href="">HAND CARE</a>
+                            <a href="">Handwash</a>
+                            <a href="">Hand Sanitizer</a>
+                            <a href="">Hand Cream</a>
+                          </div>
+    
+                          <div class="column5">
+                            <a href="">FOOT CARE</a>
+                            <a href="">Foot Cream</a>
+                            <a href="">Foot Scrub</a>
+                          </div>
+    
+                          <div class="column6">
+                            <a href=""></a>
+                            <a href="">Safety Essentials</a>
+                            <a href="">Masks & Gloves</a>
+                            <a href="">Air Freshners</a>
+                            <a href="">Household Supplies</a>
+                          </div>
+                    </div>
+                </li>
+                <li><a href="">Perfumes & Deos</a>
+                    <div class="dropBox1" id="perfume">
+                        <div class="column1">
+                            <a href="">PERFUMES(EDT/EDP)</a>
+                            <a href="">BODY MIST/SPRAY</a>
+                            <a href="">DEODORANTS/ROLL-ONS</a>
+                            <a href="">COLOGNES & AFTER SHAVES</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Health</a>
+                  <div class="dropBox1" id="health">
+                    <div class="column1">
+                      <a href="">HEALTH SUPPLIMENTS</a>
+                      <a href="">Multivitamins</a>
+                      <a href="">Calcium & Vitamin D</a>
+                      <a href="">Magnesium & Zinc</a>
+                      <a href="">Omega 3 & Fish oil</a>
+                      <a href="">Immunity Boosters & Vitamin C</a>
+                      <a href="">Melatonin</a>
+                      <a href="">Biotin</a>
+                      <a href="">Collagen</a>
+                      <a href="">Other Suppliments</a>
+                    </div>
+                    <div class="column2">
+                      <a href="">SPORTS NUTRITION</a>
+                      <a href="">Whey Protein</a>
+                      <a href="">Whey Isolate Protein</a>
+                      <a href="">Plant Protein</a>
+                      <a href="">BCAA & Other Muscle Support</a>
+                      <a href="">Weigth and Mass Gainers</a>
+                    </div>
+                    <div class="column3">
+                      <a href="">WEIGTH MANAGEMENT</a>
+                      <a href="">Apple Cider Vinegar</a>
+                      <a href="">Green Tea</a>
+                      <a href="">Green Coffee</a>
+                      <a href="">Fat Burners</a>
+                      <a href="">Slimming Shakes & Juices</a>
+                      <a href="">Sugar Substitutes</a>
+                    </div>
+                    <div class="column4">
+                      <a href="">HEALTH FOODS</a>
+                      <a href="">Dry Fruits, Nuts & Berries</a>
+                      <a href="">Edible Seeds</a>
+                      <a href="">Black Tea & Coffee</a>
+                      <a href="">Herbal Teas</a>
+                      <a href="">Breakfast Cereals</a>
+                      <a href="">Peanut Butter & Protein Snacks</a>
+                      <a href="">Other Health Foods</a>
+                    </div>
+                    <div class="column5">
+                      <a href="">WELLNESS EQUIPEMENT</a>
+                      <a href="">Weighing Scales </a>
+                      <a href="">Fitness</a>
+                      <a href="">Face Steamers</a>
+                      <a href=""><h6>PAIN RELIEF</h6></a>
+                      <a href="">Muscles & Joints</a>
+                      <a href="">Ortho Oils</a>
+                      <a href="">Cough & Cold</a>
+                    </div>
+                    <div class="column6">
+                      <a href="">AYURVEDA & HERBS</a>
+                      <a href="">Ashwagandha </a>
+                      <a href="">Neem</a>
+                      <a href="">Amla</a>
+                      <a href="">Aloe Vera</a>
+                      <a href="">Milk Thistle</a>
+                      <a href="">Wheatgrass</a>
+                      <a href="">Tulsi</a>
+                      <a href="">Giloy & Guduchi</a>
+                      <a href="">Turmeric</a>
+                      <a href="">Spiriluna & Moringa</a>
+                      <a href="">Chyavanprash</a>
+                      <a href="">Shilajit</a>
+                      <a href="">Other Herbal Suppliments</a>
+                    </div>
+                    <div class="column7">
+                      <a href="">SHOP BY CONCERN</a>
+                      <a href="">Diabetes </a>
+                      <a href="">Digestion</a>
+                      <a href="">Organs-Liver, Heart, Kidney</a>
+                      <a href="">Safety & First Aid</a>
+                      <a href="">Weakness Vitality</a>
+                      <a href="">Mental Wellness</a>
+                      <a href="">Blood Pressure</a>
+                      <a href="">Hair & Skin Concerns</a>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="">Luxe</a>
+                  <div class="dropBox1" id="luxe">
+                    <div class="column1">
+                      <a href="">BATH & BODY</a>
+                      <a href="">HAIR</a>
+                      <a href="">FRAGRANCE</a>
+                      <a href="">SKIN</a>
+                    </div>
+                </li>
+                <li><a href="">Gadgets & Tech</a>
+                  <div class="dropBox1" id="gadget">
+                    <div class="column1">
+                      <a href="">HEADPHONES</a>
+                      <a href="">SPEAKERS</a>
+                      <a href="">SMART WATCHES & ACTIVTY TRACKERS</a>
+                      <a href="">COMPUTER PERIPHERALS</a>
+                      <a href="">POWER BANKS</a>
+                      <a href="">CABLES & CHARGERS</a>
+                      <a href="">SMART HOME DEVICES</a>
+                      <a href="">CASES & COVERS</a>
+                      <a href="">CAMERA ACCESSORIES</a>
+      
+                    </div>
+                </li>
+                <li><a href="">Lifestyle</a>
+                  <div class="dropBox1" id="lifestyle">
+                    <div class="column1">
+                      <a href="">FOOT WEARS</a>
+                      <a href="">Sneakers</a>
+                      <a href="">Flip Flops</a>
+                      <a href="">Casual Shoes</a>
+                      <a href="">Formal Shoes</a>
+                      <a href="">Sports Shoes</a>
+                      <a href="">Sandals</a>
+                      <a href="">Boots</a>
+                      <a href="">Sliders</a>
+                      <a href="">Clogs</a>
+                    </div>
+                    <div class="column2">
+                      <a href="">WATCHES</a>
+                      <a href="">Watches</a>
+                      <a href="">Smart Watches</a>
+                      <a href="">DRINKWARE</a>
+                      <a href="">Barware & Bar Essentials</a>
+                      <a href="">Flasks & Bottles</a>
+                    </div>
+                    <div class="column3">
+                      <a href="">ACTIVEWEAR & CLOTHING</a>
+                      <a href="">Lounge Wear</a>
+                      <a href="">Innerwear</a>
+                      <a href="">Briefs & Trunks</a>
+                      <a href="">Boxers</a>
+                      <a href="">Vests</a>
+                      <a href="">Thermals</a>
+                      <a href="">Sports Gears & Accessories</a>
+                      <a href="">Tshirts</a>
+                      <a href="">Jerseys</a>
+                    </div>
+                    <div class="column4">
+                      <a href="">SPORT ACCESSORIES</a>
+                      <a href="">Joggers</a>
+                      <a href="">Tracksuits</a>
+                      <a href="">Sport Shorts</a>
+                      <a href="">Track Pants</a>
+                      <a href="">Hoddies & Sweatshirts</a>
+                      <a href="">Jackets</a>
+                      <a href="">Tank Tops</a>
+                      <a href="">Rain Jackets</a>
+                    </div>
+                    <div class="column5">
+                      <a href="">FASHION ACCESSORIES</a>
+                      <a href="">Fashin Accessories </a>
+                      <a href="">Wallets</a>
+                      <a href="">Belts</a>
+                      <a href="">Ties,Cufflinks & Pocket Square</a>
+                      <a href="">Caps & Hats</a>
+                      <a href="">Socks</a>
+                      <a href="">Stationary</a>
+                    </div>
+                    <div class="column6">
+                      <a href="">BAGS & BAKPACKS</a>
+                      <a href="">Bag Packs </a>
+                      <a href="">Laptop Bags</a>
+                      <a href="">Messenger Bags</a>
+                      <a href="">Hand Bags</a>
+                      <a href="">Duffle Bags</a>
+                      <a href="">Gym Bags</a>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="">petcare</a>
+                  <div class="dropBox1" id="petcare">
+                  <div class="column1">
+                    <a href="">CLEANING & HYGIENE</a>
+                    <a href="">Shampoos & Conditioners </a>
+                    <a href="">Grooming Wipes</a>
+                    <a href="">Shower & Bath Accessories</a>
+                    <a href="">Dental Care</a>
+                    <a href="">Tick & Flea Control</a>
+                    <a href="">Stain Control & Deodorizers</a>
+                    <a href="">Poopers & Scoopers & Bags</a>
+                  </div>
+                  <div class="column2">
+                    <a href="">PET GROOMINFG</a>
+                    <a href="">Pet Hair Grooming Tools </a>
+                    <a href="">HEALTH & WELLNESS</a>
+                    <a href="">FEEDING & WATER SUPPLIES</a>
+                   
+                  </div>
+                  <div class="column3">
+                    <a href="">FOOD & TREATS</a>
+                    <a href="">Dog Food  </a>
+                    <a href="">Cat Food </a>
+                    <a href="">Fish Food</a>
+                    <a href="">Dog Bones</a>
+                    <a href="">Cookies, Biscuits & Snacks</a>
+            
+                  </div>
+                  <div class="column4">
+                    <a href="">PET ACCESSORIES</a>
+                    <a href="">PET CLOTHING & FASHION</a>
+                    <a href="">PET TOYS</a>
+                  </div>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--  -->
+    <!-- <div id="navBArunqProd"></div> -->
+    
+    <div id="unq_product_cont">
+        
+        <div id="unq_product_C_cont">
+
+            <div id="unq_imgDiv">
+
+
+            </div>
+            <div id="unq_detailsDiv">
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+  </div>
+
+  <!--cart html-->
+  <div id="test">
+
+   
+    <div id="cart-items">
+        
+      <div id="heading">
+        <span onclick="myFunction()"><i class="fas fa-angle-left fa-2x"></i></span>
+        <span><h2>Shopping Bag</h2></span>
+      </div>
+  <div id="scrollBox">
+  
+  
+      <div id="hide">
+  
+        <div class="V-firstDiv">
+          <input type="checkbox" id="check" checked />
+          <label for=""
+            >Extra 10% OFF on orders above Rs 1000. Use Code NYKAAMAN10.</label
+          >
+        </div>
+        <div class="V-SecondDiv">
+          <input type="checkbox" id="check" />
+          <label id="reward" for="">2000 Reward Points Rs20</label>
+          <p>Apply</p>
+        </div>
+      </div>
+      <hr>
+      <div id="V-cart-products"></div>
+      <div id="V-total-details">
+          <hr>
+        <h2>Payment Details</h2>
+        <div id="V-total-price">
+          <table>
+            <tbody>
+              <tr>
+                <td class="td1" >Bag Total</td>
+                <td id="total">0</td>
+              </tr>
+              <tr>
+                <td class="td1">Bag Discount</td>
+                <td id="bigDis">0</td>
+              </tr>
+              <tr>
+                <td class="td1">Sub Total</td>
+                <td id="subtotal">0</td>
+              </tr>
+              <tr>
+                <td class="td1">Shipping Charge</td>
+                <td id="shipping">0</td>
+              </tr>
+              <tr>
+                <td class="td1">Grand Total</td>
+                <td id="grand">0</td>
+              </tr>
+            </tbody>
+          </table>
+          <input type="text" name="" id="coupon" placeholder="Have a Coupon ?">
+        </div>
+        <hr>
+        <div>
+  
+        </div>
+            <table id="tble">
+                <tbody>
+                    <tr>
+                        <td>Grand Total</td>
+                    </tr>
+                    <tr><td id="grand_total">0</td></tr>
+  
+                </tbody>
+            </table>
+            <button id="gotopayment666">PROCEED</button>
+        </div>
+    </div>
+    <div>
+    </div>
+  </div>
+  </div>
+  <!--cart html ends-->
+
+    <!-- <div id="unq_prod_footerC"></div> -->
+
+    <div id="footer_container1Dk">
+
+        <div class="footer_contCdiv">
+            <i class="fas fa-envelope fa-2x msgIconDk"></i>
+            <p id="msgIconPara">GET SPECIAL DISCOUNT ON YOUR INBOX</p>
+            <input id="inputFooterDk" type="text" placeholder="Your Email"/>
+            <button id="btnFooterDk">Send</button>
+    
+        </div>
+    
+        <div class="footer_contCdiv">
+            <i class="fas fa-phone-alt fa-2x msgIconDk"></i>
+            <p id="phnIconPara">FOR ANY HELP YOU MAY CALL US AT<br>1800-267-4444</p>
+            <br>
+            <p id="contactTimingDk">(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</p>
+    
+    
+        </div>
+    
+    </div>
+    
+    
+    
+    <div id="footer_container2Dk">
+    
+    
+        <div class="footer_cDivuLDk">
+            <ul style="color: white; list-style: none; margin-left: 10%;">
+                <li><h2 style="margin-top: 15%;">NYKAA<br>MAN</h2></li>
+                <li class="listParaDk list_para_hover">WHO ARE WE?</li> 
+                <li class="listParaDk list_para_hover">CAREERS</li>
+                <li class="listParaDk list_para_hover">AUTHENTICITY</li>
+                <li class="listParaDk list_para_hover">PRESS</li>
+                <li class="listParaDk list_para_hover">TESTIMONIALS</li>
+            </ul>
+        </div>
+    
+        <div class="footer_cDivuLDk">
+            <ul style="color: white; list-style: none; margin-top: 15%;">
+                <li class="listParaDk list_para_hover"  style="font-size: 16px;">HELP</li>
+                <li class="listParaDk list_para_hover">CONTACT US</li> 
+                <li class="listParaDk list_para_hover">FREQUENTLY ASKED QUESTIONS</li>
+                <li class="listParaDk list_para_hover">STORE LOCATOR</li>
+                <li class="listParaDk list_para_hover">CANCELLATION & RETURN</li>
+                <li class="listParaDk list_para_hover">SHIPPING & DELIVERY POLICY</li>
+            </ul>
+            
+        </div>
+        <div class="footer_cDivuLDk">
+            <ul style="color: white; list-style: none; margin-top: 15%;">
+                <li class="listParaDk list_para_hover"  style="font-size: 16px;">QUICK LINKS</li>
+                <li class="listParaDk list_para_hover">BRAND STORE</li> 
+                <li class="listParaDk list_para_hover">OFFER ZONE</li>
+                <li class="listParaDk list_para_hover">SITE MAP</li>
+            </ul>
+    
+        </div>
+        <div class="footer_cDivuLDk">
+    
+            <ul style="color: white; list-style: none; margin-top: 15%;">
+                <li class="listParaDk list_para_hover" style="font-size: 16px;">TOP CATEGORIES</li>
+                <li class="listParaDk list_para_hover">SHAVING</li> 
+                <li class="listParaDk list_para_hover">HAIR CARE</li>
+                <li class="listParaDk list_para_hover">PERSONAL CARE</li>
+                <li class="listParaDk list_para_hover">PERFUMES & DEOS</li>
+                <li class="listParaDk list_para_hover">WELLNESS</li>
+            </ul>
+        </div>
+        <div class="footer_cDivuLDk">
+            <ul style="color: white; list-style: none; margin-top: 15%;">
+                <li  style="font-size: 16px;"> LUXE </li>
+                <li class="listParaDk list_para_hover">BATH AND BODY</li> 
+                <li class="listParaDk list_para_hover">HAIR</li>
+                <li class="listParaDk list_para_hover">FRAGRANCE</li>
+                <li class="listParaDk list_para_hover">SKIN</li>
+            </ul>
+        </div>
+    
+    </div>
+    
+    
+    <div id="footer_container3Dk">
+    
+        <div id="footer_containerCdiv">
+    
+            <div style="margin-top: 5%;">
+            <img style="display: inline-block;" src="https://adn-static1.nykaa.com/media/listing/nykaaman/nykaaman_shipping.svg" alt="img">
+            <p class="freeShippingparaDk">FREE SHIPPING</p>
+            <hr style="margin-left: 20%; color: lightgray; margin-top: -1px; width: 85%;">
+            <p class="footerLAst2ndPara">for orders above<br>INR499</p>
+            </div>
+    
+    
+            <div style="margin-top: 5%;">
+    
+                <img style="display: inline-block;" src="https://adn-static1.nykaa.com/media/listing/nykaaman/nykaaman_genuine.svg" alt="img">
+                <p style="margin-left: 5%;" class="freeShippingparaDk">AUTHENTIC<br>PRODUCTS</p>
+                <hr style="margin-left: 25%; color: lightgray; margin-top: -1px; width: 85%;">
+                <p class="footerLAst2ndPara">Sourced Directly from<br> Brands/ Authorised Distributors</p>
+    
+            </div>
+    
+    
+            <div style="margin-top: 5%;">
+    
+               <p class="freeShippingparaDk socialMediaPara">SHOW US SOME LOVE ON SOCIAL MEDIA</p>
+               <i class="fab instaFbIcon fa-instagram-square fa-2x"></i>
+               <i style="margin-left: 5%;" class="fab instaFbIcon fa-facebook-square fa-2x"></i>
+    
+            </div>
+    
+        </div>
+    </div>
+    
+    
+    <div id="footer_container4Dk">
+    
+        <div id="footer_containerCd4Dk">
+            <p class="footerMostParaDk">TERMS & CONDITIONS</p>
+            <p class="footerMostParaDk">SHIPPING POLICY</p>
+            <p class="footerMostParaDk">CANCELLATION POLICY</p>
+            <p class="footerMostParaDk">PRIVACY POLICY</p>
+    
+            <p id="footerMostPara2Dk">© 2021 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+<script>
+
+
+    let navbarContainerUnq = document.getElementById("navBArunqProd")
+    let unq_prod_footerC = document.getElementById("unq_prod_footerC");
+    document.getElementById("GoToLogin").addEventListener("click",()=>{
+    window.location.href="account.html"
+    })
+    let unq_imgS_Div = document.getElementById("unq_imgDiv");
+    let unq_detailsDiv = document.getElementById("unq_detailsDiv");
+
+
+    let unq_product = JSON.parse(localStorage.getItem("individual"));
+    // console.log(unq_product);
+
+    displayUnqProduct(unq_product);
+
+    function displayUnqProduct(item) {
+
+        //      IMAGES SECTION STARTS   //////////////
+        let imgDiv = document.createElement("div");
+        imgDiv.setAttribute("id","full_imgDiv");
+
+        let full_image = document.createElement("img")
+        full_image.src = item.images[0];
+        full_image.style.width = "250px";
+        full_image.style.height = "280px";
+        full_image.style.marginTop = "22%";
+        imgDiv.append(full_image);
+
+        let imgChildDiv = document.createElement("div");
+        imgChildDiv.setAttribute("id","imgChildDiv");
+        for(let i = 0; i < item.images.length; i++) {
+
+            let small_img = document.createElement("img");
+            small_img.src = item.images[i];
+            small_img.setAttribute("id", "smallImgUnqP")
+            imgChildDiv.append(small_img);
+            small_img.addEventListener("mouseover", () => {
+                small_img.style.border = "1px solid red";
+                full_image.src = small_img.src;
+            });
+            small_img.addEventListener("mouseout", () => {
+                small_img.style.border = "1px solid darkgray"
+            })
+        }
+
+        //      IMAGES SECTION ENDS  ////////
+
+
+
+
+        //PRODUCT DETAILS SECTION STARTS  ////////
+        let unq_p_NameDiv = document.createElement("div");  
+        unq_p_NameDiv.setAttribute("id", "unq_p_NameDiv")
+
+        let unq_p_Name = document.createElement("h2");
+        unq_p_Name.setAttribute("class", "unq_productTexts");
+        unq_p_Name.innerText = item.name;
+
+        unq_p_NameDiv.append(unq_p_Name)
+
+        let unq_p_ratingDiv = document.createElement("div");
+        unq_p_ratingDiv.setAttribute("id", "unq_p_ratingDiv");
+
+        let unq_pRatingDiv = document.createElement("div");
+
+       
+        let unq_star_rating1 = document.createElement("span");
+       unq_star_rating1.setAttribute("class", "fa fa-star");
+
+        let unq_star_rating2 = document.createElement("span");
+       unq_star_rating2.setAttribute("class", "fa fa-star");
+
+        let unq_star_rating3 = document.createElement("span");
+       unq_star_rating3.setAttribute("class", "fa fa-star");
+
+        let unq_star_rating4 = document.createElement("span");
+        unq_star_rating4.setAttribute("class", "fa fa-star");
+
+        let unq_star_rating5 = document.createElement("span");
+        unq_star_rating5.setAttribute("class", "fa fa-star");
+
+        let unq_star_ratingP = document.createElement("h4");
+        unq_star_ratingP.setAttribute("class", "unq_productTexts")
+        unq_star_ratingP.style.marginTop = "0px";
+        unq_star_ratingP.style.marginLeft = "5px";
+        unq_star_ratingP.style.paddingRight = "10px";
+        unq_star_ratingP.style.borderRight = "1px solid lightgray";
+        unq_star_ratingP.innerHTML = `${item.ratings.$numberDouble}/5`;
+
+        let dkNum = Math.round(Math.random()*50);
+        let dkNum2 = Math.round(Math.random()*500);
+        let dkNum3 = Math.round(Math.random()*100);
+
+        let unq_rating_reviewsP = document.createElement("h4");
+        unq_rating_reviewsP.setAttribute("class", "unq_productTexts")
+        unq_rating_reviewsP.innerHTML = `${dkNum2} Ratings & ${dkNum3} Reviews`;
+        unq_rating_reviewsP.style.marginTop = "0px";
+        unq_rating_reviewsP.style.marginLeft = "10px";
+        unq_rating_reviewsP.style.paddingRight = "10px";
+        unq_rating_reviewsP.style.borderRight = "1px solid lightgray";
+
+        let unq_rating_Qna = document.createElement("h4");
+        unq_rating_Qna.setAttribute("class", "unq_productTexts")
+        unq_rating_Qna.innerHTML = `${dkNum} Q&As`;
+        unq_rating_Qna.style.marginTop = "0px";
+        unq_rating_Qna.style.marginLeft = "10px";
+
+        unq_p_ratingDiv.append(unq_star_rating1,unq_star_rating2,unq_star_rating3,unq_star_rating4,unq_star_rating5,unq_star_ratingP,unq_rating_reviewsP,unq_rating_Qna)
+
+        let unq_show = Math.floor(Number(item.ratings.$numberDouble));
+
+        let unq_star_spans = unq_p_ratingDiv.childNodes;
+        for(let i = 0; i < unq_show; i++) {
+
+            unq_star_spans[i].setAttribute("id", "unq_color_stars")
+        }
+
+
+        let unq_mrpDiv = document.createElement("div");
+        unq_mrpDiv.setAttribute("id","unq_mrpDiv");
+
+        let unq_Pmrp = document.createElement("h4");
+       unq_Pmrp.setAttribute("class", "unq_productTexts")
+       unq_Pmrp.innerText = `MRP:`;
+       unq_Pmrp.style.color = "silver";
+       unq_Pmrp.style.marginTop = "0px";
+
+
+       let unq_p_old_price = document.createElement("h4");
+       unq_p_old_price.setAttribute("class", "unq_productTexts");
+       unq_p_old_price.style.textDecoration = "line-through";
+        unq_p_old_price.innerText = `₹${item.oldPrice.$numberInt}`;
+        unq_p_old_price.style.color = "silver";
+        unq_p_old_price.style.marginTop = "0px";
+       
+
+       let unq_p_new_price = document.createElement("h4");
+       unq_p_new_price.setAttribute("class", "unq_productTexts");
+        unq_p_new_price.innerText = `₹${item.newprice.$numberInt} |`;
+        
+
+
+       let uniq_p_discount = document.createElement("h4");
+       uniq_p_discount.setAttribute("class", "unq_productTexts");
+        uniq_p_discount.innerText = item.discount;
+
+
+        unq_mrpDiv.append(unq_Pmrp,unq_p_old_price,unq_p_new_price,uniq_p_discount);
+
+
+
+        let unq_p_taxesDiv = document.createElement("div");
+        unq_p_taxesDiv.setAttribute("id","unq_p_taxesDiv");
+
+        let unq_p_taxespara = document.createElement("h4");
+        unq_p_taxespara.innerText = "inclusive of all taxes";
+        unq_p_taxespara.style.color = "#475562";
+
+
+        unq_p_taxesDiv.append(unq_p_taxespara);
+
+
+        let unq_p_offersDiv = document.createElement("div");
+        unq_p_offersDiv.setAttribute("id", "unq_p_offersDiv");
+
+        let dkNum4 = Math.floor(Math.random()*20);
+
+        let unq_p_offerspara = document.createElement("p");
+        unq_p_offerspara.style.fontSize="13px";
+        unq_p_offerspara.style.marginLeft = "4%";
+        unq_p_offerspara.style.marginTop = "10px";
+        unq_p_offerspara.innerHTML = `Buy 2, Get Extra ${dkNum4}% OFF on Cart`;
+        unq_p_offersDiv.append(unq_p_offerspara);
+
+
+
+        let unq_p_btnInpDiv = document.createElement("div");
+        unq_p_btnInpDiv.setAttribute("id", "unq_p_btnInpDiv");
+
+        let unq_p_btnDiv = document.createElement("div");
+        unq_p_btnDiv.setAttribute("id", "unq_p_btnDiv");
+
+        let unq_p_btn = document.createElement("button");
+        unq_p_btn.setAttribute("id", "unq_p_btn");
+        unq_p_btn.textContent = "ADD TO CART";
+        unq_p_btnDiv.append(unq_p_btn);
+        unq_p_btn.addEventListener("click", () =>{
+          var a= JSON.parse(localStorage.getItem("bagdata")) || []
+         a.push(item)
+         localStorage.setItem("bagdata",JSON.stringify(a))
+         location.reload()
+        })
+
+        let unq_p_inputDiv = document.createElement("div");
+        unq_p_inputDiv.setAttribute("id", "unq_p_inputDiv");
+
+        let unq_divLocation = document.createElement("div")
+
+        let unq_deliveryIcon = document.createElement("div");
+        unq_deliveryIcon.innerHTML = ``
+        unq_divLocation.append(unq_deliveryIcon)
+
+        let unq_deliveryPara = document.createElement("h4");
+        unq_deliveryPara.innerText = "DELIVERY OPTIONS"
+
+        let unq_divLocationInp = document.createElement("div")
+
+        let deliveryInput_dk = document.createElement("input");
+        deliveryInput_dk.setAttribute("id","deliveryInput_dk");
+        deliveryInput_dk.placeholder = "Enter Pincode";
+
+        let deliveryBtnCheck = document.createElement("button");
+        deliveryBtnCheck.textContent = "CHECK"
+        deliveryBtnCheck.setAttribute("id","deliveryBtnCheck");
+
+
+        unq_divLocationInp.append(deliveryInput_dk,deliveryBtnCheck);
+
+
+        unq_p_inputDiv.append(unq_divLocation,unq_deliveryPara,unq_divLocationInp);
+
+        unq_p_btnInpDiv.append(unq_p_btnDiv,unq_p_inputDiv);
+
+
+
+
+
+        
+
+        let unq_p_staticParaDiv = document.createElement("div");
+        unq_p_staticParaDiv.setAttribute("id","unq_p_staticParaDiv");
+
+        let unq_staticPdiv1 = document.createElement("div");
+        unq_staticPdiv1.style.marginLeft = "5%";
+        let staticPara1 = document.createElement("p");
+        staticPara1.style.marginTop = "12%"
+        staticPara1.setAttribute("class", "staticParaDk");
+        staticPara1.innerText = "100% GENUINE PRODUCTS";
+        unq_staticPdiv1.append(staticPara1);
+
+        let unq_staticPdiv2 = document.createElement("div");
+        let staticPara2 = document.createElement("p");
+        staticPara2.style.marginTop = "14%"
+        staticPara2.setAttribute("class", "staticParaDk");
+        staticPara2.innerText = "EASY RETURN POLICY";
+        unq_staticPdiv2.append(staticPara2);
+
+        let unq_staticPdiv3 = document.createElement("div");
+        let staticPara3 = document.createElement("p");
+        staticPara3.style.marginTop = "9%"
+        staticPara3.setAttribute("class", "staticParaDk");
+        staticPara3.innerText = "SOLD BY :NYKAA E RETAIL PVT LTD";
+        unq_staticPdiv3.append(staticPara3);
+
+
+        unq_p_staticParaDiv.append(unq_staticPdiv1,unq_staticPdiv2,unq_staticPdiv3);
+
+
+
+       unq_detailsDiv.append(unq_p_NameDiv,unq_p_ratingDiv,unq_mrpDiv,unq_p_taxesDiv,unq_p_offersDiv,unq_p_btnInpDiv,unq_p_staticParaDiv)
+        unq_imgS_Div.append(imgDiv,imgChildDiv)
+    }
+    document.getElementById("openCart").addEventListener("click",()=>{
+    hide();
+})
+
+
+</script>
+<script src="/js/Cart.js"></script>
