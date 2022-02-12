@@ -8,7 +8,8 @@
 
   "scripts": {
 
-    "server": "nodemon src/server"
+    "start" :"node src/server.js"
+
 
   },
 
